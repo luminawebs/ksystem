@@ -123,7 +123,7 @@ Table of Content:
 /* general */
 body {
     font-family: 'Aller_Lt';
-    color: #000000
+    color: #000000;
     font-size: 16px;
     font-weight: 400;
     /*! background: #020202; */
@@ -797,7 +797,7 @@ textarea {
 }
 
 .ion-logo-skype {
-    color: #0ffffff  !important;
+    color: #ffffff  !important;
 }
 
 .bg-facebook {
@@ -1072,7 +1072,7 @@ textarea {
     left: -260px;
     width: 260px;
     z-index: 999;
-    background: #0d4a83000e3;
+    background: #0d4a83e3;
     overflow-y: auto;
 }
 
@@ -1648,7 +1648,7 @@ a.button-outline:hover {
 
 .card-avatar-image .title-name {
 	font-family: 'Aller_Lt', sans-serif;
-	src: url(fonts/Aller.ttf)
+	src: url(fonts/Aller.ttf);
     font-size: 16px;
     font-weight: 500;
 }
@@ -1982,14 +1982,15 @@ margin-bottom: -35px;
 .modal-bottom {
     display: flex;
     align-items: center;
-    min-height: calc(115% - 16px);
+    /* min-height: calc(115% - 16px); */
     align-items: end;
+    padding: 20px 0px;
 }
 
 .modal-bottom2 {
     display: flex;
     align-items: center;
-    min-height: calc(103% - 16px);
+    /* min-height: calc(103% - 16px); */
     align-items: end;
 }
 
