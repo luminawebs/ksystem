@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/fakeLoader.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modern-button.css">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash-icon.png">
 
 	<style>
@@ -239,34 +240,34 @@
 
 
 	<div class="container">
-		<a href="#" data-toggle="modal" data-target="#appointment2">
-			<div class="row">
-				<div class="col-12">
-					<div class="img">
-						<img src="images/appointment.png" alt="Whatsapp">
-					</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="btn-container">
+					<a href="#" class="modern-btn modern-btn-primary" data-toggle="modal" data-target="#appointment2">
+						<i class="icon ion-ios-calendar"></i>
+						PEDIR UNA CITA
+					</a>
 				</div>
 			</div>
-		</a>
+		</div>
 	</div>
 
 
-	<div class="separator-medium"></div>
 
 
 	<div class="container">
-		<a href="#" data-toggle="modal" data-target="#objective">
-			<div class="row">
-				<div class="col-12">
-					<div class="img">
-						<img src="images/objective.png" alt="Whatsapp">
-					</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="btn-container">
+					<a href="#" class="modern-btn modern-btn-secondary" data-toggle="modal" data-target="#objective">
+						<i class="icon ion-ios-person"></i>
+						ACERCA DE MÍ
+					</a>
 				</div>
 			</div>
-		</a>
+		</div>
 	</div>
 
-	<div class="separator-medium"></div>
 
 
 	<!-- <div class="container">
@@ -282,19 +283,33 @@
 	</div> -->
 
 
-	<div class="separator-medium"></div>
 
 
 	<div class="container">
-		<a href="#" data-toggle="modal" data-target="#services">
-			<div class="row">
-				<div class="col-12">
-					<div class="img">
-						<img src="images/employ.png" alt="Whatsapp">
-					</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="btn-container">
+					<a href="#" class="modern-btn modern-btn-legal" data-toggle="modal" data-target="#services">
+						<i class="icon ion-ios-briefcase"></i>
+						SERVICIOS LEGALES
+					</a>
 				</div>
 			</div>
-		</a>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="btn-container">
+					<a href="#" class="modern-btn modern-btn-accent" data-toggle="modal" data-target="#legal-matters">
+						<i class="icon ion-ios-document"></i>
+						ASUNTOS LEGALES
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -355,8 +370,59 @@
 
 							<div class="col-12" align="center">
 								<div class="text">
-									<h5 class="card-title" style="font-size: 28px"><strong>SERVICIOS</strong></h5>
-									<h4 class="card-title">LEGALES</h4>
+									<h5 class="card-title" style="font-size: 24px"><strong>SERVICIOS</strong></h5>
+									<h4 class="card-title" style="font-size: 20px">LEGALES</h4>
+
+								</div>
+
+								<div class="separator-medium"></div>
+
+								<div class="text" style="color: #333; font-size: 18px; line-height: 1.6; margin-bottom: 20px;">
+									<p style="margin-bottom: 15px; font-weight: bold; font-size: 20px;">¿TIENES PROBLEMAS LEGALES EN COLOMBIA?</p>
+									<p style="margin-bottom: 20px; font-size: 16px;">TE AYUDAMOS A SOLUCIONAR DE MANERA RÁPIDA, OPORTUNA Y SEGURA.</p>
+									
+									<div style="text-align: left; font-size: 16px; line-height: 2;">
+										<p>✔️ Trámites Notariales</p>
+										<p>✔️ Contratos o Deudas</p>
+										<p>✔️ Divorcios</p>
+										<p>✔️ Asesorías</p>
+										<p>✔️ Documentos Legales</p>
+										<p>✔️ Representación jurídica</p>
+										<p>✔️ Propiedades y títulos</p>
+										<p>✔️ Procesos de Pertenencia</p>
+									</div>
+								</div>
+
+								<div class="separator-medium"></div>
+
+								<div class="row">
+									<div class="col-12" type="button" data-dismiss="modal">
+										<button class="modern-btn modern-btn-secondary close" style="width: 240px" data-dismiss="modal">CERRAR</button>
+									</div>
+								</div>
+								<div class="separator-medium"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- ASUNTOS LEGALES Modal -->
+	<div id="legal-matters" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog" style=" margin-top: 9.5rem;">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" style="color: #1F1F1F">×</button>
+					<div class="container" style="align-content: center">
+						<div class="row" style="padding-top: 5px; align-content: center">
+
+
+							<div class="col-12" align="center">
+								<div class="text">
+									<h5 class="card-title" style="font-size: 24px"><strong>ASUNTOS</strong></h5>
+									<h4 class="card-title" style="font-size: 20px">LEGALES</h4>
 
 								</div>
 
@@ -367,13 +433,13 @@
 									<div class="card-body">
 										<div class="card-avatar-image">
 											<div class="text">
-												<h5 class="card-title"><strong>TRÁMITES NOTARIALES</strong></h5>
-												<h4 class="card-title">DOCUMENTOS LEGALES</h4>
+												<h5 class="card-title"><strong>DIVORCIOS Y SEPARACIÓN</strong></h5>
+												<h4 class="card-title">DERECHO DE FAMILIA</h4>
 												<span class="date"><i class="icon ion-ios-square"></i>LAYTON Y
 													ASOCIADOS</span>
-												<span class="date"><i class="icon ion-ios-square"></i>SOLUCIONES LEGALES
-													INTEGRALES</span>
-												<a href="#" data-toggle="modal" data-target="#notarial"
+												<span class="date"><i class="icon ion-ios-square"></i>ASESORÍA
+													ESOECIALIZADA</span>
+												<a href="#" data-toggle="modal" data-target="#divorcios"
 													style="color: #FFFFFF; width: 200px"><button
 														class="button button-fill button-small" style="width: 250px">Ver
 														Detalles</button></a>
@@ -392,13 +458,13 @@
 									<div class="card-body">
 										<div class="card-avatar-image">
 											<div class="text">
-												<h5 class="card-title"><strong>CONTRATOS Y ASESORÍA</strong></h5>
-												<h4 class="card-title">DERECHO CONTRACTUAL</h4>
+												<h5 class="card-title"><strong>SUCESIONES Y TESTAMENTOS</strong></h5>
+												<h4 class="card-title">DERECHO SUCESORIO</h4>
 												<span class="date"><i class="icon ion-ios-square"></i>LAYTON Y
 													ASOCIADOS</span>
-												<span class="date"><i class="icon ion-ios-square"></i>REPRESENTACIÓN
-													JURÍDICA</span>
-												<a href="#" data-toggle="modal" data-target="#contratos"
+												<span class="date"><i class="icon ion-ios-square"></i>TRÁMITES
+													HEREDITARIOS</span>
+												<a href="#" data-toggle="modal" data-target="#sucesiones"
 													style="color: #FFFFFF; width: 200px"><button
 														class="button button-fill button-small" style="width: 250px">Ver
 														Detalles</button></a>
@@ -410,165 +476,39 @@
 								</div>
 
 
-
 								<div class="separator-medium"></div>
 
 
 								<div class="card bg-lightblue card-forum">
 									<div class="card-body">
-										<div class="card-avatar-image" align="center">
+										<div class="card-avatar-image">
 											<div class="text">
-												<h5 class="card-title"><strong>BILINGUAL TRAINING SPECIALIST </strong>
-												</h5>
-												<h4 class="card-title">CONTINUOUS IMPROVEMENT </h4>
-												<span class="date"><i class="icon ion-ios-square"></i>MEDLINE
-													INDUSTRIES, LP. </span>
-												<span class="date"><i class="icon ion-ios-square"></i> MARCH 2021 -
-													2023</span>
-												<a href="#" data-toggle="modal" data-target="#bilingual"
+												<h5 class="card-title"><strong>DERECHO INMOBILIARIO</strong></h5>
+												<h4 class="card-title">COMPRA Y VENTA</h4>
+												<span class="date"><i class="icon ion-ios-square"></i>LAYTON Y
+													ASOCIADOS</span>
+												<span class="date"><i class="icon ion-ios-square"></i>ESCRITURAS Y
+													REGISTROS</span>
+												<a href="#" data-toggle="modal" data-target="#inmobiliario"
 													style="color: #FFFFFF; width: 200px"><button
-														class="button button-fill button-small"
-														style="width: 250px">View Details </button></a>
+														class="button button-fill button-small" style="width: 250px">Ver
+														Detalles</button></a>
 
 											</div>
 
 										</div>
 									</div>
-
 								</div>
-							</div>
 
+								<div class="separator-medium"></div>
 
-							<div class="separator-medium"></div>
-
-
-							<div class="card bg-lightblue card-forum">
-								<div class="card-body">
-									<div class="card-avatar-image" align="center">
-										<div class="text">
-											<h5 class="card-title"><strong>TRAINING AND DOCUMENT CONTROL COORDINATOR
-												</strong></h5>
-											<h4 class="card-title">QUALITY </h4>
-											<span class="date"><i class="icon ion-ios-square"></i>TECOMET INC.</span>
-											<span class="date"><i class="icon ion-ios-square"></i> JULY 2019 - FEBRUARY
-												2021</span>
-											<a href="#" data-toggle="modal" data-target="#training"
-												style="color: #FFFFFF; width: 200px"><button
-													class="button button-fill button-small" style="width: 250px">View
-													Details </button></a>
-
-										</div>
-
+								<div class="row">
+									<div class="col-12" type="button" data-dismiss="modal">
+										<button class="button03 button-fill close" style="width: 240px">BACK</button>
 									</div>
 								</div>
-
+								<div class="separator-medium"></div>
 							</div>
-
-							<div class="separator-medium"></div>
-
-
-							<div class="card bg-lightblue card-forum">
-								<div class="card-body">
-									<div class="card-avatar-image" align="center">
-										<div class="text">
-											<h5 class="card-title"><strong>DEVICE HISTORY RECORD REVIEWER </strong></h5>
-											<h4 class="card-title">QUALITY </h4>
-											<span class="date"><i class="icon ion-ios-square"></i>TECOMET INC.</span>
-											<span class="date"><i class="icon ion-ios-square"></i> JULY 2018 - JULY
-												2019</span>
-											<a href="#" data-toggle="modal" data-target="#device"
-												style="color: #FFFFFF; width: 200px"><button
-													class="button button-fill button-small" style="width: 250px">View
-													Details </button></a>
-
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="separator-medium"></div>
-
-
-							<div class="card bg-lightblue card-forum">
-								<div class="card-body">
-									<div class="card-avatar-image" align="center">
-										<div class="text">
-											<h5 class="card-title"><strong>INFORMATION SPECIALIST II </strong></h5>
-											<h4 class="card-title">OPERATIONS </h4>
-											<span class="date"><i class="icon ion-ios-square"></i>ABBVIE
-												CONTRACTOR</span>
-											<span class="date" style="margin-top: -40px"><i
-													class="icon ion-ios-square"></i> MARCH 2018 - JUNE 2018</span>
-											<a href="#" data-toggle="modal" data-target="#information"
-												style="color: #FFFFFF; width: 200px"><button
-													class="button button-fill button-small" style="width: 250px">View
-													Details </button></a>
-
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-							<div class="separator-medium"></div>
-
-
-							<div class="card bg-lightblue card-forum">
-								<div class="card-body">
-									<div class="card-avatar-image" align="center">
-										<div class="text">
-											<h5 class="card-title"><strong>E-COMMERCE ASSOCIATE </strong></h5>
-											<h4 class="card-title">WAREHOUSE </h4>
-											<span class="date"><i class="icon ion-ios-square"></i>TRIFINITY |
-												WAUKEGAN</span>
-											<span class="date" style="margin-top: -40px"><i
-													class="icon ion-ios-square"></i> OCT 2017 - MARCH 2018</span>
-											<a href="#" data-toggle="modal" data-target="#ecommerce"
-												style="color: #FFFFFF; width: 200px"><button
-													class="button button-fill button-small" style="width: 250px">View
-													Details </button></a>
-
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-							<div class="separator-medium"></div>
-
-
-							<div class="card bg-lightblue card-forum">
-								<div class="card-body">
-									<div class="card-avatar-image" align="center">
-										<div class="text">
-											<h5 class="card-title"><strong>FULFILLMENT ASSOCIATE </strong></h5>
-											<h4 class="card-title">WAREHOUSE </h4>
-											<span class="date"><i class="icon ion-ios-square"></i>AMAZON |
-												KENOSHA</span>
-											<span class="date" style="margin-top: -40px"><i
-													class="icon ion-ios-square"></i> OCT 2016 - OCT 2017</span>
-											<a href="#" data-toggle="modal" data-target="#fulfillment"
-												style="color: #FFFFFF; width: 200px"><button
-													class="button button-fill button-small" style="width: 250px">View
-													Details </button></a>
-
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="separator-medium"></div>
-
-							<div class="row">
-								<div class="col-12" type="button" data-dismiss="modal">
-									<button class="button03 button-fill close" style="width: 240px">BACK</button>
-								</div>
-							</div>
-							<div class="separator-medium"></div>
 						</div>
 					</div>
 				</div>
@@ -1732,7 +1672,7 @@
 
 								<div class="row">
 									<div class="col-12" type="button" data-dismiss="modal">
-										<button class="button03 button-fill close" style="width: 240px">BACK</button>
+										<button class="modern-btn modern-btn-secondary close" style="width: 240px;" data-dismiss="modal">BACK</button>
 									</div>
 								</div>
 								<div class="separator-medium"></div>
@@ -1774,7 +1714,7 @@
 
 								<div class="row">
 									<div class="col-12" type="button" data-dismiss="modal">
-										<button class="button02 button-fill close" style="width: 240px">BACK</button>
+										<button class="modern-btn modern-btn-secondary close" style="width: 240px;" data-dismiss="modal">BACK</button>
 									</div>
 								</div>
 								<div class="separator-medium"></div>
@@ -1909,7 +1849,7 @@
 
 
 
-										<button class="button03 button-fill" type="submit">Send</button>
+									<button class="modern-btn modern-btn-accent" type="submit" style="margin-top: 20px;">Send</button>
 									</form>
 
 								</div>

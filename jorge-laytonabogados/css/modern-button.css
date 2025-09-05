@@ -1,0 +1,251 @@
+/* 
+ * Modern Button Styles for Jorge Layton Abogados
+ * State-of-the-art button styling with hover effects, transitions, shadows, and interactive states
+ */
+
+/* Main Button Styles */
+.modern-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 24px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #363f73 0%, #2a2e54 100%);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(54, 63, 115, 0.3);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect with Gradient Shift */
+.modern-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(54, 63, 115, 0.4);
+    background: linear-gradient(135deg, #2a2e54 0%, #363f73 100%);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Active/Click Effect */
+.modern-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(54, 63, 115, 0.3);
+}
+
+/* Focus Effect for Accessibility */
+.modern-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(54, 63, 115, 0.4), 0 4px 15px rgba(54, 63, 115, 0.3);
+}
+
+/* Button Shine Animation */
+.modern-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+    );
+    transform: rotate(30deg);
+    opacity: 0;
+    transition: opacity 0.6s;
+    z-index: -1;
+}
+
+.modern-btn:hover::after {
+    opacity: 1;
+    animation: shine 1.5s infinite;
+}
+
+/* Button Icon Styles */
+.modern-btn i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Button Variants */
+
+/* Primary Button - Blue */
+.modern-btn-primary {
+    background: linear-gradient(135deg, #363f73 0%, #2a2e54 100%);
+}
+
+.modern-btn-primary:hover {
+    background: linear-gradient(135deg, #2a2e54 0%, #363f73 100%);
+}
+
+/* Secondary Button - Dark Gray */
+.modern-btn-secondary {
+    background: linear-gradient(135deg, #575252 0%, #3d3a3a 100%);
+}
+
+.modern-btn-secondary:hover {
+    background: linear-gradient(135deg, #3d3a3a 0%, #575252 100%);
+}
+
+/* Accent Button - Burgundy */
+.modern-btn-accent {
+    background: linear-gradient(135deg, #b83d44 0%, #8c2d32 100%);
+}
+
+.modern-btn-accent:hover {
+    background: linear-gradient(135deg, #8c2d32 0%, #b83d44 100%);
+}
+
+/* Special Variant - Legal Theme */
+.modern-btn-legal {
+    background: linear-gradient(135deg, #2a214c 0%, #1a142e 100%);
+}
+
+.modern-btn-legal:hover {
+    background: linear-gradient(135deg, #1a142e 0%, #2a214c 100%);
+}
+
+/* Animation Keyframes */
+@keyframes shine {
+    0% {
+        opacity: 0;
+        transform: rotate(30deg) translate(-30px, -30px);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(30deg) translate(100px, 100px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .modern-btn {
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-btn {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+    
+    .modern-btn i {
+        font-size: 18px;
+    }
+}
+
+/* Accessibility - High Contrast Mode Support */
+@media (forced-colors: active) {
+    .modern-btn {
+        border: 2px solid transparent;
+    }
+    
+    .modern-btn:focus {
+        border-color: CanvasText;
+    }
+}
+
+/* Disabled State */
+.modern-btn:disabled,
+.modern-btn.disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Full-width Container for Buttons */
+.btn-container {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+/* Modal Improvements */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: #333;
+    z-index: 1050;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.modal .close:hover {
+    opacity: 1;
+    color: #000;
+}
+
+/* Form Improvements */
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="tel"],
+.modal-content input[type="date"],
+.modal-content input[type="time"] {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0 16px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat-Light', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content input:focus {
+    outline: none;
+    border-color: #363f73;
+    box-shadow: 0 0 0 3px rgba(54, 63, 115, 0.2);
+}
+
+/* Modal Title Styling */
+.modal-content .card-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Modal Fixes */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+}
