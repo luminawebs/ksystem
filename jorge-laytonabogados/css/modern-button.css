@@ -17,7 +17,7 @@
     letter-spacing: 1px;
     text-align: center;
     color: #ffffff;
-    background: linear-gradient(135deg, #363f73 0%, #2a2e54 100%);
+    background: linear-gradient(135deg, #363f739b 0%, #2a2e54 100%);
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(54, 63, 115, 0.3);
@@ -27,6 +27,7 @@
     overflow: hidden;
     z-index: 1;
     margin-bottom: 15px;
+    backdrop-filter: blur(10px);
 }
 
 /* Hover Effect with Gradient Shift */
@@ -93,7 +94,8 @@
 
 /* Secondary Button - Dark Gray */
 .modern-btn-secondary {
-    background: linear-gradient(135deg, #70778c 0%, #494e5f 100%);
+    background: linear-gradient(135deg, #70778c22 0%, #494e5fa5 100%); 
+    backdrop-filter: blur(10px);
 }
 
 .modern-btn-secondary:hover {
@@ -176,7 +178,6 @@
 .btn-container {
     width: 100%;
     padding: 10px 15px;
-    margin-bottom: 10px;
 }
 
 /* Modal Improvements */
@@ -234,7 +235,7 @@
 
 /* Modal Title Styling */
 .modal-content .card-title {
-    color: #333;
+    color: #b83d44;
     margin-bottom: 20px;
 }
 

@@ -177,7 +177,7 @@ input:not(:placeholder-shown)+.placeholder {
 }
 
 .contact-buttons .img img {
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
 }
 
@@ -220,7 +220,7 @@ h4,
 h5,
 h6 {
     line-height: 115%;
-    font-family: 'Montserrat-Black';
+    font-family: 'Poppins', Arial, sans-serif !important;
     letter-spacing: 0.5px;
     margin: 0;
     font-weight: 500;
@@ -1300,8 +1300,9 @@ textarea {
 /*list view*/
 
 .list-view {
-    position: relative;
+    position: absolute;
     z-index: 1;
+    margin-top: 15px;
 }
 
 
@@ -1760,7 +1761,7 @@ a.button-outline:hover {
 }
 
 .card-highlight .card-body .card-title {
-    color: #fff;
+    color: #b83d44;
 }
 
 .card-highlight .card-body .card-date {
