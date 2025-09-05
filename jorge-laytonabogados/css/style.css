@@ -63,82 +63,151 @@ Table of Content:
 /* general */
 
 
-@font-face {
-    font-family: 'palitoon';
-    src: url("fonts/palitoon.otf")
+
+
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="tel"],
+.modal-content input[type="date"],
+.modal-content input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em;
 }
 
-@font-face {
-    font-family: 'Aller';
-    src: url("fonts/Aller.ttf")
-}
-
-@font-face {
-    font-family: 'Aller_Lt';
-    src: url("fonts/Aller_Lt.ttf")
-}
-
-@font-face {
-    font-family: 'Fastup400';
-    src: url("fonts/Fastup400.ttf")
-}
-
-@font-face {
-    font-family: 'Montserrat-Light';
-    src: url("fonts/Montserrat-Light.ttf")
-}
-
-@font-face {
-    font-family: 'Montserrat-Medium';
-    src: url("fonts/Montserrat-Medium.otf")
-}
-
-@font-face {
-    font-family: 'Montserrat-Black';
-    src: url("fonts/Montserrat-Black.ttf")
-}
-
-@font-face {
-    font-family: 'EstroMN';
-    src: url("fonts/EstroMN.ttf")
-}
-
-@font-face {
-    font-family: 'BebasNeue-Regular';
-    src: url("fonts/BebasNeue-Regular.ttf")
-}
-
-@font-face {
-    font-family: 'Buchery';
-    src: url("fonts/Buchery.ttf")
-}
-
-@font-face {
-    font-family: 'Bellefair-Regular';
-    src: url("fonts/Bellefair-Regular.ttf")
-}
-
-@font-face {
-    font-family: 'SFPRODISPLAYREGULAR';
-    src: url("fonts/SFPRODISPLAYREGULAR.otf")
-}
-
-@font-face {
-    font-family: 'SFPRODISPLAYMEDIUM';
-    src: url("fonts/SFPRODISPLAYMEDIUM.otf")
-}
-
-@font-face {
-    font-family: 'SFPRODISPLAYBOLD';
-    src: url("fonts/SFPRODISPLAYBOLD.otf")
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+    padding: 10px;
+    /* Añadimos padding para que se vean más grandes */
+    font-size: 16px;
+    /* Aumentamos el tamaño de la fuente */
+    margin-bottom: 15px;
+    /* Añadimos espacio entre los campos */
 }
 
 
+/* Asegura que los inputs de fecha y hora se vean bien en dispositivos iPhone */
+input[type="date"],
+input[type="time"] {
+    -webkit-appearance: none;
+    /* Elimina el estilo nativo en iOS */
+    appearance: none;
+    /* Asegura la compatibilidad cruzada */
+}
+
+
+
+
+/* Cambiar color de los placeholders con prefijos */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #888;
+    /* Color deseado para el placeholder */
+    opacity: 1;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #888;
+    /* Color deseado para el placeholder */
+    opacity: 1;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+    color: #888;
+    /* Color deseado para el placeholder */
+    opacity: 1;
+}
+
+
+
+/* General para todos los inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Estilo para los inputs dentro de contenedores */
+.input-wrapper {
+    position: relative;
+}
+
+/* Estilo del label flotante (simulando el placeholder) */
+.input-wrapper .placeholder {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #888;
+    /* Color del texto del placeholder */
+    font-size: 16px;
+    pointer-events: none;
+    /* Evita que el label interfiera con la interacción */
+    transition: all 0.3s ease;
+    /* Suaviza la transición cuando el campo tiene foco */
+}
+
+/* Estilo cuando el input tiene valor o tiene foco (el placeholder desaparece) */
+input:focus+.placeholder,
+input:not(:placeholder-shown)+.placeholder {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #555;
+    /* Color más oscuro para cuando el input está en uso */
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-buttons .img img {
+    max-width: 100px;
+    height: auto;
+}
+
+.contact-buttons {
+    margin-bottom: 40px !important;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background: #000;
+}
+
+.full-container,
+body {
+    background: transparent !important;
+    font-family: 'Poppins', 'Roboto', Arial, sans-serif !important;
+}
 
 
 body {
     font-family: 'Montserrat-Light';
-    color: #ae6262
+    color: #ae6262;
     font-size: 16px;
     font-weight: 400;
     /*! background: #020202; */
@@ -171,15 +240,21 @@ h8 {
 
 
 #share-button {
-    background-color: #ffffff; /* Color de fondo */
-    color: #2b224d; /* Color del texto */
-    border: none; /* Sin borde */
-    /* padding: 10px 20px; */ /* Espaciado */
-    cursor: pointer; /* Cambia el cursor */
+    background-color: #ffffff;
+    /* Color de fondo */
+    color: #2b224d;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    /* padding: 10px 20px; */
+    /* Espaciado */
+    cursor: pointer;
+    /* Cambia el cursor */
 }
 
 #share-button:hover {
-    background-color: #b1b5b1; /* Color al pasar el mouse */
+    background-color: #b1b5b1;
+    /* Color al pasar el mouse */
 }
 
 
@@ -209,9 +284,9 @@ h5 {
     font-size: 16px;
 }
 
-h5 > p {
+h5>p {
     margin-bottom: 10px;
-    
+
 }
 
 h6 {
@@ -368,12 +443,12 @@ textarea {
 }
 
 /* switch or toggle */
-.custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked~.custom-control-label::before {
     background: #fe2775;
     border-color: #fe2775;
 }
 
-.custom-control-input:checked ~ .custom-control-label::after {
+.custom-control-input:checked~.custom-control-label::after {
     left: calc(-40px + 10px);
 }
 
@@ -428,8 +503,13 @@ textarea {
 }
 
 .row img {
-    width: 100%;
+
+    /* width: 100%; */
     /* border-radius: 18px; */
+}
+
+.row .img {
+    text-align: center;
 }
 
 /*grid custom*/
@@ -720,7 +800,7 @@ textarea {
 }
 
 .bg-secondary {
-        border: 1px solid #ddd;
+    border: 1px solid #ddd;
     background: transparent;
 }
 
@@ -967,7 +1047,7 @@ textarea {
 
 /* page wrapper for index.html, features.html, apps.html, & pages.html */
 .page-wrapper {
-    padding: 10px 0 42px;
+    padding: 10px 0;
 }
 
 /* pages wrapper for feature & page other */
@@ -1218,6 +1298,14 @@ textarea {
 }
 
 /*list view*/
+
+.list-view {
+    position: relative;
+    z-index: 1;
+}
+
+
+
 .list-view .list-item {
     height: 30px;
     display: flex;
@@ -1808,7 +1896,7 @@ a.button-outline:hover {
     width: 100%;
 }
 
-.card-list .card-list-item:last-child > .card-list-title::after {
+.card-list .card-list-item:last-child>.card-list-title::after {
     display: none;
 }
 
@@ -1843,7 +1931,7 @@ a.button-outline:hover {
     border-radius: 18px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     background: #fe2775;
 }
 
@@ -1978,7 +2066,7 @@ margin-bottom: -35px;
     padding-bottom: 30px;
 }
 
-.swiper-testimonial.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-testimonial.swiper-container-horizontal>.swiper-pagination-bullets {
     bottom: 5px;
 }
 
@@ -2083,8 +2171,13 @@ margin-bottom: -35px;
 
 .modal-content {
     border: 0;
-      border-top-left-radius: 35px;
-      border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+
+.modal-content h4 {
+    color: #b03a41;
 }
 
 .modal-content .text-small {
@@ -2259,7 +2352,7 @@ margin-bottom: -35px;
 
 .nav-link.active {
     border-bottom: 3px solid #b83d44;
-     font-family: 'Montserrat-Black';
+    font-family: 'Montserrat-Black';
     color: #2b2929;
 }
 
@@ -2757,25 +2850,77 @@ margin-bottom: -35px;
 }
 
 /* Aseguramos que todos los campos de tipo date y time ocupen el 100% del ancho disponible */
-input[type="date"], input[type="time"] {
-    width: 100%;            /* Forzamos que ocupen el 100% del ancho del formulario */
-    display: block;         /* Los convertimos en bloques para que se apilen uno debajo del otro */
-    margin-bottom: 15px;     /* Espaciado entre los campos */
-    padding: 10px;          /* Agregamos un poco de padding para que se vean mejor */
-    font-size: 16px;        /* Ajustamos el tamaño de la fuente */
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    /* Forzamos que ocupen el 100% del ancho del formulario */
+    display: block;
+    /* Los convertimos en bloques para que se apilen uno debajo del otro */
+    margin-bottom: 15px;
+    /* Espaciado entre los campos */
+    padding: 10px;
+    /* Agregamos un poco de padding para que se vean mejor */
+    font-size: 16px;
+    /* Ajustamos el tamaño de la fuente */
 }
 
-input[type="date"], input[type="time"] {
-    width: 100%;  /* Fuerza que ocupen todo el ancho disponible */
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    /* Fuerza que ocupen todo el ancho disponible */
 }
 
-input::placeholder, textarea::placeholder {
-    color: #888; /* El color que desees */
-    opacity: 1;  /* Asegura que el color del placeholder sea completamente visible */
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    /* El color que desees */
+    opacity: 1;
+    /* Asegura que el color del placeholder sea completamente visible */
 }
 
 /* Opcional: Cambiar el color de los placeholders cuando el campo tiene foco */
-input:focus::placeholder, textarea:focus::placeholder {
-    color: #555; /* Color para cuando el input tiene foco */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #555;
+    /* Color para cuando el input tiene foco */
 }
 
+.full-container {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+/* Estilo para el fondo de la parte superior */
+
+@media (max-width: 400px) {
+    .bg-top {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 250px) {
+    .bg-top {
+        height: 380px !important;
+    }
+}
+
+
+
+
+.bg-top {
+    background: url('../images/bg02.png') no-repeat bottom center;
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    position: absolute;
+}
+
+.logo {
+    max-width: 300px;
+    width: 100%;
+}
+
+.user {
+    max-width: 250px;
+    width: 100%;
+}
