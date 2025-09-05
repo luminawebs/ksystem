@@ -2899,9 +2899,17 @@ textarea:focus::placeholder {
     }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 290px) {
     .bg-top {
         height: 380px !important;
+    }
+}
+
+
+
+@media (max-width: 215px) {
+    .bg-top {
+        height: 275px !important;
     }
 }
 

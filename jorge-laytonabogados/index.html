@@ -32,7 +32,22 @@
 	</style>
 
 	<style>
-		
+		.contact-buttons .img img {
+			transition: box-shadow 0.3s, filter 0.3s;
+			box-shadow: none;
+		}
+		.contact-buttons .img img[src*="wpp.svg"]:hover {
+			box-shadow: 0 0 16px 0 #25d366;
+			filter: drop-shadow(0 0 0 #25d366) brightness(0) saturate(100%) invert(53%) sepia(88%) saturate(749%) hue-rotate(88deg) brightness(95%) contrast(92%);
+		}
+		.contact-buttons .img img[src*="call.svg"]:hover {
+			box-shadow: 0 0 16px 0 #34b7f1;
+			filter: drop-shadow(0 0 0 #34b7f1) brightness(0) saturate(100%) invert(60%) sepia(98%) saturate(500%) hue-rotate(180deg) brightness(90%) contrast(90%);
+		}
+		.contact-buttons .img img[src*="mail_1.svg"]:hover {
+			box-shadow: 0 0 16px 0 #fbbc05;
+			filter: drop-shadow(0 0 0 #fbbc05) brightness(0) saturate(100%) invert(81%) sepia(36%) saturate(500%) hue-rotate(1deg) brightness(100%) contrast(100%);
+		}
 	</style>
 
 </head>
@@ -227,7 +242,7 @@
 
 
 		<div id="services" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-			<div class="modal-dialog" style=" margin-top: 9.5rem;">
+			<div class="modal-dialog" >
 				<div class="modal-content">
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" style="color: #1F1F1F">×</button>
@@ -276,7 +291,7 @@
 
 			<!-- ASUNTOS LEGALES Modal -->
 			<div id="legal-matters" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-				<div class="modal-dialog" style=" margin-top: 9.5rem;">
+				<div class="modal-dialog" >
 					<div class="modal-content">
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal" style="color: #1F1F1F">×</button>
