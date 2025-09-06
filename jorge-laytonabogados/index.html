@@ -36,14 +36,17 @@
 			transition: box-shadow 0.3s, filter 0.3s;
 			box-shadow: none;
 		}
+
 		.contact-buttons .img img[src*="wpp.svg"]:hover {
 			box-shadow: 0 0 16px 0 #25d366;
 			filter: drop-shadow(0 0 0 #25d366) brightness(0) saturate(100%) invert(53%) sepia(88%) saturate(749%) hue-rotate(88deg) brightness(95%) contrast(92%);
 		}
+
 		.contact-buttons .img img[src*="call.svg"]:hover {
 			box-shadow: 0 0 16px 0 #34b7f1;
 			filter: drop-shadow(0 0 0 #34b7f1) brightness(0) saturate(100%) invert(60%) sepia(98%) saturate(500%) hue-rotate(180deg) brightness(90%) contrast(90%);
 		}
+
 		.contact-buttons .img img[src*="mail_1.svg"]:hover {
 			box-shadow: 0 0 16px 0 #fbbc05;
 			filter: drop-shadow(0 0 0 #fbbc05) brightness(0) saturate(100%) invert(81%) sepia(36%) saturate(500%) hue-rotate(1deg) brightness(100%) contrast(100%);
@@ -170,8 +173,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="btn-container">
-						<a href="#" class="modern-btn " data-toggle="modal"
-							data-target="#objective">
+						<a href="#" class="modern-btn " data-toggle="modal" data-target="#objective">
 							<i class="icon ion-ios-person"></i>
 							ACERCA DE MÍ
 						</a>
@@ -199,8 +201,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="btn-container">
-						<a href="#" class="modern-btn modern-btn-secondary" data-toggle="modal"
-							data-target="#qr-code">
+						<a href="#" class="modern-btn modern-btn-secondary" data-toggle="modal" data-target="#qr-code">
 							<i class="icon ion-ios-document"></i>
 							CÓDIGO QR
 						</a>
@@ -230,8 +231,8 @@
 				<div class="content-box shadow-sm">
 
 					<p class="made-by text-small">
-						<font color="#FFFFFF">Creado por</font> 
-							KSystemGroup
+						<font color="#FFFFFF">Creado por</font>
+						KSystemGroup
 					</p>
 				</div>
 			</div>
@@ -242,7 +243,7 @@
 
 
 		<div id="services" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-			<div class="modal-dialog" >
+			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" style="color: #1F1F1F">×</button>
@@ -252,8 +253,9 @@
 
 								<div class="col-12" align="center">
 									<div class="text">
-										<h5 class="card-title" style="font-size: 24px"><strong>SERVICIOS LEGALES</strong></h5>
-										
+										<h5 class="card-title" style="font-size: 24px"><strong>SERVICIOS
+												LEGALES</strong></h5>
+
 									</div>
 
 									<div class="separator-medium"></div>
@@ -279,7 +281,7 @@
 
 									<div class="separator-medium"></div>
 
-								
+
 									<div class="separator-medium"></div>
 								</div>
 							</div>
@@ -291,7 +293,7 @@
 
 			<!-- ASUNTOS LEGALES Modal -->
 			<div id="legal-matters" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-				<div class="modal-dialog" >
+				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal" style="color: #1F1F1F">×</button>
@@ -389,7 +391,7 @@
 
 										<div class="separator-medium"></div>
 
-									
+
 										<div class="separator-medium"></div>
 									</div>
 								</div>
@@ -403,26 +405,26 @@
 
 
 
-			
 
 
 
 
-			
-
-
-			
 
 
 
 
-			
 
-			
 
-			
 
-			
+
+
+
+
+
+
+
+
+
 
 
 
@@ -505,7 +507,7 @@
 										<div class="separator-medium"></div>
 
 
-										
+
 										<div class="separator-medium"></div>
 									</div>
 								</div>
@@ -597,7 +599,6 @@
 					<div class="modal-body">
 						<button type="button" class="close" data-dismiss="modal" style="color: #131313">×</button>
 
-
 						<div class="container" style="align-content: center">
 							<div class="row" align="center">
 								<div class="col-12">
@@ -605,48 +606,82 @@
 										<h5 class="card-title" style="font-size: 28px; align-content: center">
 											<strong>PEDIR UNA CITA</strong>
 										</h5>
-										<!-- <h4 class="card-title">MAKE AN APPOIMENT</h4> -->
-
 									</div>
 								</div>
 							</div>
 							<div class="row" style="padding-top: 5px; align-content: center">
 								<div class="col-12" align="center">
-
 									<div class="container">
-										<form action="enviar.php" method="POST">
-											<input type="text" name="nombre" id="nombre" placeholder="Name" required>
-											<input type="email" name="email" id="email" placeholder="E-mail" required>
-											<input type="tel" name="telefono" id="telefono" placeholder="Phone"
+										<form id="appointment-form">
+											<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+											<input type="email" name="email" id="email" placeholder="Correo electrónico"
+												required>
+											<input type="tel" name="telefono" id="telefono" placeholder="Teléfono"
 												required>
 
-											<label for="fecha">Select Date</label>
+											<label for="fecha">Seleccionar fecha</label>
 											<input type="date" name="fecha" id="fecha" placeholder="Fecha de cita"
 												required>
 
-
-											<label for="fecha">Select Time</label>
+											<label for="hora">Seleccionar hora</label>
 											<input type="time" name="hora" id="hora" placeholder="Hora de cita"
 												required>
 
-
-
 											<button class="modern-btn modern-btn-accent" type="submit"
-												style="margin-top: 20px;">Send</button>
+												style="margin-top: 20px;">
+												Enviar por WhatsApp
+											</button>
 										</form>
-
 									</div>
-
 									<div class="separator-medium"></div>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
+
+		<script>
+			document.getElementById('appointment-form').addEventListener('submit', function (e) {
+				e.preventDefault();
+
+				// Get form values
+				const nombre = document.getElementById('nombre').value;
+				const email = document.getElementById('email').value;
+				const telefono = document.getElementById('telefono').value;
+				const fecha = document.getElementById('fecha').value;
+				const hora = document.getElementById('hora').value;
+
+				// Format date for better readability
+				const fechaFormateada = new Date(fecha).toLocaleDateString('es-ES', {
+					weekday: 'long',
+					year: 'numeric',
+					month: 'long',
+					day: 'numeric'
+				});
+
+				// Create WhatsApp message
+				const mensaje = `Hola, me gustaría solicitar una cita con el abogado Jorge Layton.%0A%0A` +
+					`*Información de contacto:*%0A` +
+					`- Nombre: ${nombre}%0A` +
+					`- Email: ${email}%0A` +
+					`- Teléfono: ${telefono}%0A%0A` +
+					`*Preferencia de cita:*%0A` +
+					`- Fecha: ${fechaFormateada}%0A` +
+					`- Hora: ${hora}%0A%0A` +
+					`Por favor confirmar disponibilidad. Gracias.`;
+
+				// Open WhatsApp with pre-filled message
+				window.open(`https://wa.me/16693358266?text=${mensaje}`, '_blank');
+
+				// Close the modal
+				$('#appointment2').modal('hide');
+
+				// Reset the form
+				document.getElementById('appointment-form').reset();
+			});
+		</script>
 
 
 
@@ -680,7 +715,7 @@
 									<div class="separator-medium"></div>
 
 
-								
+
 									<div class="separator-medium"></div>
 								</div>
 							</div>
@@ -693,66 +728,7 @@
 
 
 
-		<div id="appointment" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" style="margin: .7rem auto;">
-				<div class="modal-content"
-					style="background-color:#FFFFFF; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" style="color: #131313">×</button>
 
-
-						<div class="container" style="align-content: center">
-							<div class="row" align="center">
-								<div class="col-12">
-									<div class="text">
-										<h5 class="card-title" style="font-size: 28px; align-content: center">
-											<strong>COMPLETE DE FORM</strong>
-										</h5>
-										<h4 class="card-title">MAKE AN APPOIMENT</h4>
-
-									</div>
-								</div>
-							</div>
-							<div class="row" style="padding-top: 5px; align-content: center">
-								<div class="col-12" align="center">
-
-									<div class="container">
-										<form id="appointmentForm">
-
-											<input type="text" id="name" placeholder="Ingrese su nombre" />
-
-
-											<input type="email" id="email" placeholder="Ingrese su email" />
-
-
-											<input type="tel" id="phone" placeholder="Ingrese su celular" />
-
-											<label for="date">Fecha</label>
-											<div class="input-wrapper">
-												<input type="date" id="date" />
-											</div>
-
-											<label for="time">Hora</label>
-											<div>
-												<input class="col-12" type="time" id="time" />
-											</div>
-
-											<button class="button03 button-fill"
-												id="openAppointmentModal">Enviar</button>
-										</form>
-
-									</div>
-
-									<div class="separator-medium"></div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
 
 
 
@@ -760,7 +736,8 @@
 			<div class="modal-dialog modal-dialog-centered" style="margin: .7rem auto;">
 				<div class="modal-content" style="background-color:#fff; border-radius: 20px;">
 					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" style="color: #131313; font-size: 2rem;">×</button>
+						<button type="button" class="close" data-dismiss="modal"
+							style="color: #131313; font-size: 2rem;">×</button>
 						<div class="container" style="align-content: center">
 							<div class="row" style="padding-top: 5px; align-content: center">
 								<div class="col-12" align="center">
@@ -770,10 +747,11 @@
 										</h5>
 									</div>
 									<div class="separator-medium"></div>
-									<img src="images/qr.png" alt="Código QR" style="max-width: 250px; width: 100%; margin-bottom: 20px;">
+									<img src="images/qr.png" alt="Código QR"
+										style="max-width: 250px; width: 100%; margin-bottom: 20px;">
 									<p>Escanea este código QR para acceder rápidamente a la información de contacto.</p>
 									<div class="separator-medium"></div>
-									
+
 								</div>
 							</div>
 						</div>
