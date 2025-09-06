@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Código QR Personalizado</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <!-- ...existing code... -->
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+    <!-- ...existing code... -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2a214c 0%, #1a1038 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ff7eee, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .settings-panel {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .preview-panel {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #e0e0e0;
+        }
+
+        input[type="text"],
+        input[type="color"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            -webkit-appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #8a2be2;
+            cursor: pointer;
+        }
+
+        .color-picker {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .color-picker input {
+            flex: 1;
+        }
+
+        .qr-container {
+            width: 250px;
+            height: 250px;
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #qrcode {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #qrcode canvas,
+        #qrcode img {
+            border-radius: 8px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-generate {
+            background: linear-gradient(to right, #8a2be2, #6a0dad);
+            color: white;
+            flex: 2;
+        }
+
+        .btn-download {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            flex: 1;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .ai-options {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .ai-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: #ff7eee;
+        }
+
+        .ai-title i {
+            font-size: 1.5rem;
+        }
+
+        .pattern-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .pattern-option {
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pattern-option:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .pattern-option.active {
+            background: rgba(138, 43, 226, 0.3);
+            border: 2px solid #8a2be2;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Generador de Código QR</h1>
+            <p class="subtitle">Crea códigos QR personalizados con diferentes estilos y colores</p>
+        </header>
+
+        <div class="main-content">
+            <div class="settings-panel">
+                <div class="form-group">
+                    <label for="qr-text">URL o Texto para el código QR</label>
+                    <input type="text" id="qr-text" placeholder="https://ejemplo.com"
+                        value="https://wa.me/16693358266?text=Hola%2C%20necesito%20de%20su%20ayuda%20legal.">
+                </div>
+
+                <div class="form-group">
+                    <label for="qr-size">Tamaño del código QR</label>
+                    <input type="range" id="qr-size" min="100" max="300" value="200">
+                    <span id="size-value">200px</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="qr-color">Color del código QR</label>
+                    <div class="color-picker">
+                        <input type="color" id="qr-color" value="#000000">
+                        <input type="color" id="qr-bgcolor" value="#ffffff">
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Color frontal</span>
+                        <span>Color de fondo</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="qr-style">Estilo de los módulos</label>
+                    <select id="qr-style">
+                        <option value="squares">Cuadrados</option>
+                        <option value="dots">Puntos</option>
+                        <option value="rounded">Redondeados</option>
+                    </select>
+                </div>
+
+                <div class="ai-options">
+                    <div class="ai-title">
+                        <i>🤖</i>
+                        <h3>Opciones de Diseño con IA</h3>
+                    </div>
+                    <p>Selecciona un patrón para personalizar tu código QR:</p>
+
+                    <div class="pattern-options">
+                        <div class="pattern-option active" data-pattern="default">
+                            <div>Predeterminado</div>
+                        </div>
+                        <div class="pattern-option" data-pattern="circular">
+                            <div>Circular</div>
+                        </div>
+                        <div class="pattern-option" data-pattern="heart">
+                            <div>Corazones</div>
+                        </div>
+                        <div class="pattern-option" data-pattern="dots">
+                            <div>Puntos</div>
+                        </div>
+                        <div class="pattern-option" data-pattern="extra">
+                            <div>Extra</div>
+                        </div>
+                        <div class="pattern-option" data-pattern="creative">
+                            <div>Creativo</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-generate" onclick="generateQRCode()">Generar QR</button>
+                    <button class="btn-download" onclick="downloadQRCode()">Descargar QR</button>
+                </div>
+            </div>
+
+            <div class="preview-panel">
+                <h3>Vista Previa</h3>
+                <div class="qr-container">
+                    <div id="qrcode"></div>
+                </div>
+                <p>Escanea este código QR para probarlo</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Generador de código QR para KSystemGroup/p>
+            <p>© Todos los derechos reservados</p>
+        </div>
+    </div>
+
+    <script>
+        // Initialize with default QR code
+        document.addEventListener('DOMContentLoaded', function () {
+            generateQRCode();
+
+            // Update size value display
+            document.getElementById('qr-size').addEventListener('input', function () {
+                document.getElementById('size-value').textContent = this.value + 'px';
+            });
+
+            // Add event listeners for pattern options
+            const patternOptions = document.querySelectorAll('.pattern-option');
+            patternOptions.forEach(option => {
+                option.addEventListener('click', function () {
+                    patternOptions.forEach(opt => opt.classList.remove('active'));
+                    this.classList.add('active');
+                    generateQRCode();
+                });
+            });
+        });
+
+        // Generate QR code function
+        function generateQRCode() {
+            const qrText = document.getElementById('qr-text').value;
+            const qrSize = parseInt(document.getElementById('qr-size').value, 10);
+            const qrColor = document.getElementById('qr-color').value;
+            const qrBgColor = document.getElementById('qr-bgcolor').value;
+            const selectedPattern = document.querySelector('.pattern-option.active').dataset.pattern;
+
+            // Clear previous QR code
+            const qrcodeDiv = document.getElementById('qrcode');
+            qrcodeDiv.innerHTML = '';
+
+            // Create canvas
+            const canvas = document.createElement('canvas');
+            canvas.width = qrSize;
+            canvas.height = qrSize;
+            qrcodeDiv.appendChild(canvas);
+
+            // Generate QR code
+            QRCode.toCanvas(canvas, qrText, {
+                width: qrSize,
+                color: {
+                    dark: qrColor,
+                    light: qrBgColor
+                },
+                margin: 1
+            }, function (error) {
+                if (error) console.error(error);
+                applyPatternStyle(selectedPattern);
+            });
+        }
+
+        // Apply pattern style to QR code
+        function applyPatternStyle(pattern) {
+            const canvas = document.querySelector('#qrcode canvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const imageData = ctx.getImageData(0, 0, width, height);
+            const data = imageData.data;
+
+            // Apply different patterns based on selection
+            switch (pattern) {
+                case 'circular':
+                    // Make modules more circular
+                    for (let i = 0; i < data.length; i += 4) {
+                        if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) {
+                            const x = (i / 4) % width;
+                            const y = Math.floor((i / 4) / width);
+
+                            // Draw circles instead of squares for black pixels
+                            if (x % 2 === 0 && y % 2 === 0) {
+                                ctx.fillStyle = 'black';
+                                ctx.beginPath();
+                                ctx.arc(x, y, 2, 0, 2 * Math.PI);
+                                ctx.fill();
+                            }
+                        }
+                    }
+                    break;
+
+                case 'heart':
+                    // Add heart pattern to some modules
+                    for (let i = 0; i < data.length; i += 4) {
+                        if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) {
+                            const x = (i / 4) % width;
+                            const y = Math.floor((i / 4) / width);
+
+                            // Draw hearts instead of squares for some black pixels
+                            if (x % 3 === 0 && y % 3 === 0) {
+                                drawHeart(ctx, x, y, 3, 'black');
+                            }
+                        }
+                    }
+                    break;
+
+                case 'creative':
+                    // Creative pattern with gradient
+                    const gradient = ctx.createLinearGradient(0, 0, width, height);
+                    gradient.addColorStop(0, document.getElementById('qr-color').value);
+                    gradient.addColorStop(1, '#ff7eee');
+
+                    ctx.fillStyle = gradient;
+                    ctx.fillRect(0, 0, width, height);
+                    break;
+            }
+        }
+
+        // Helper function to draw a heart
+        function drawHeart(ctx, x, y, size, color) {
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            let topCurveHeight = size * 0.3;
+            ctx.moveTo(0, 0);
+            ctx.bezierCurveTo(
+                size / 2, -topCurveHeight,
+                size, 0,
+                size, size / 3
+            );
+            ctx.bezierCurveTo(
+                size, size,
+                0, size,
+                0, size / 3
+            );
+            ctx.bezierCurveTo(
+                0, 0,
+                size / 2, -topCurveHeight,
+                size, 0
+            );
+            ctx.closePath();
+            ctx.fill();
+            ctx.restore();
+        }
+
+        // Download QR code function
+        function downloadQRCode() {
+            const canvas = document.querySelector('#qrcode canvas');
+            if (!canvas) {
+                alert('Primero genera un código QR');
+                return;
+            }
+
+            const link = document.createElement('a');
+            link.download = 'codigo-qr-jorge-layton.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // ...existing code...
+        let qrCode;
+
+        function generateQRCode() {
+            const qrText = document.getElementById('qr-text').value;
+            const qrSize = parseInt(document.getElementById('qr-size').value, 10);
+            const qrColor = document.getElementById('qr-color').value;
+            const qrBgColor = document.getElementById('qr-bgcolor').value;
+            const style = document.getElementById('qr-style').value;
+            const selectedPattern = document.querySelector('.pattern-option.active').dataset.pattern;
+
+            // Remove previous QR code
+            const qrcodeDiv = document.getElementById('qrcode');
+            qrcodeDiv.innerHTML = '';
+
+            // Choose dot or square style
+            let dotType = "square";
+            if (style === "dots" || selectedPattern === "dots" || selectedPattern === "circular") {
+                dotType = "dots";
+            } else if (style === "rounded") {
+                dotType = "rounded";
+            }
+
+            // Choose gradient for creative pattern
+            let colorOptions = {
+                type: "single",
+                color: qrColor
+            };
+            if (selectedPattern === "creative") {
+                colorOptions = {
+                    type: "linear-gradient",
+                    rotation: 90,
+                    colorStops: [
+                        { offset: 0, color: qrColor },
+                        { offset: 1, color: "#ff7eee" }
+                    ]
+                };
+            }
+
+            qrCode = new QRCodeStyling({
+                width: qrSize,
+                height: qrSize,
+                data: qrText,
+                image: "",
+                dotsOptions: {
+                    color: colorOptions,
+                    type: dotType
+                },
+                backgroundOptions: {
+                    color: qrBgColor
+                },
+                cornersSquareOptions: {
+                    color: qrColor,
+                    type: "extra-rounded"
+                }
+            });
+
+            qrCode.append(qrcodeDiv);
+        }
+
+        // Download QR code function
+        function downloadQRCode() {
+            if (!qrCode) {
+                alert('Primero genera un código QR');
+                return;
+            }
+            qrCode.download({ name: "codigo-qr-jorge-layton", extension: "png" });
+        }
+        // ...existing code...
+    </script>
+</body>
+
+</html>
