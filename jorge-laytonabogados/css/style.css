@@ -227,6 +227,12 @@ h6 {
     color: #333;
 }
 
+h5{
+   font-weight: 600;
+   color: #2a2e54 ;
+   margin: 20px 0px; 
+}
+
 
 h8 {
     line-height: 115%;
