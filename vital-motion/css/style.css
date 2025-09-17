@@ -122,11 +122,12 @@ Table of Content:
 
 /* general */
 body {
-    font-family: 'Aller_Lt';
+    font-family: "Exo 2", sans-serif;
     color: #000000;
     font-size: 16px;
     font-weight: 400;
-    /*! background: #020202; */
+
+    background: #020202;
 }
 
 h1,
@@ -136,7 +137,7 @@ h4,
 h5,
 h6 {
     line-height: 115%;
-    font-family: 'Geometr706';
+    font-family: "exo 2", sans-serif;
     margin: 0;
     font-weight: 500;
     color: #333;
@@ -155,7 +156,7 @@ h3 {
 }
 
 h4 {
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -163,7 +164,7 @@ h5 {
     font-size: 30px;
 }
 
-h5 > p {
+h5>p {
     margin-bottom: 20px;
 }
 
@@ -328,12 +329,12 @@ textarea {
 }
 
 /* switch or toggle */
-.custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked~.custom-control-label::before {
     background: #fff;
     border-color: #fff;
 }
 
-.custom-control-input:checked ~ .custom-control-label::after {
+.custom-control-input:checked~.custom-control-label::after {
     left: calc(-40px + 10px);
 }
 
@@ -387,10 +388,7 @@ textarea {
     margin-bottom: 0;
 }
 
-.row img {
-    width: 100%;
-    /* border-radius: 18px; */
-}
+
 
 /*grid custom*/
 .col-1,
@@ -608,18 +606,15 @@ textarea {
 
 .social-media-icon ul li {
     display: inline-block;
-    /* margin: 0 5px; */
+    margin: 0 5px;
 }
 
 .social-media-icon a i {
-    font-size: 24px;
-    /* color: #fff; */
-    /* background: #fff; */
-    width: 38px;
-    height: 38px;
+    font-size: 20px;
+    
+    padding: 10px 15px;
     line-height: 38px;
     display: inline-block;
-    border-radius: 50%;
     text-align: center;
 }
 
@@ -757,7 +752,7 @@ textarea {
 
 /* social media color */
 .ion-logo-facebook {
-    color: #3b5999 !important;
+    color: rgb(69, 255, 23) !important;
 }
 
 .ion-logo-google {
@@ -769,7 +764,7 @@ textarea {
 }
 
 .ion-logo-instagram {
-    color: #e4405f !important;
+    color: rgb(69, 255, 23) !important;
 }
 
 .ion-logo-linkedin-in {
@@ -777,11 +772,11 @@ textarea {
 }
 
 .ion-logo-whatsapp {
-    color: #25D366 !important;
+    color: rgb(69, 255, 23) !important;
 }
 
 .ion-logo-youtube {
-    color: #cd201f !important;
+    color: rgb(69, 255, 23) !important;
 }
 
 .ion-logo-pinterest {
@@ -797,13 +792,10 @@ textarea {
 }
 
 .ion-logo-skype {
-    color: #ffffff  !important;
+    color: #ffffff !important;
 }
 
-.bg-facebook {
-    background: #ffffff  !important;
-    color: #6a111e !important;
-}
+
 
 .bg-twitter {
     background: #fff !important;
@@ -815,15 +807,16 @@ textarea {
     color: #fff !important;
 }
 
-.bg-instagram {
-    background: #ffffff !important;
-    color: #6a111e !important;
+.bg-instagram, .bg-facebook, .bg-whatsapp {
+    /* background: #ffffff !important; */
+    color: rgb(69, 255, 23) ;
+    background-image: url(../images/bg-hexa.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.bg-whatsapp {
-    background: #ffffff  !important;
-    color: #6a111e !important;
-}
+
 
 .bg-linkedin {
     background: #FFF !important;
@@ -1647,8 +1640,8 @@ a.button-outline:hover {
 }
 
 .card-avatar-image .title-name {
-	font-family: 'Aller_Lt', sans-serif;
-	src: url(fonts/Aller.ttf);
+    font-family: 'Aller_Lt', sans-serif;
+    src: url(fonts/Aller.ttf);
     font-size: 16px;
     font-weight: 500;
 }
@@ -1715,7 +1708,7 @@ a.button-outline:hover {
     width: 100%;
 }
 
-.card-list .card-list-item:last-child > .card-list-title::after {
+.card-list .card-list-item:last-child>.card-list-title::after {
     display: none;
 }
 
@@ -1750,7 +1743,7 @@ a.button-outline:hover {
     border-radius: 18px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     background: #fff;
 }
 
@@ -1807,12 +1800,12 @@ a.button-outline:hover {
 }
 
 .swiper-custom .swiper-slide .content {
-    padding: 132px 18px 10px;
+    padding: 132px 18px;
     border-radius: 18px;
 }
 
 .swiper-custom .swiper-slide .content h4 {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .swiper-pricing .swiper-slide {
@@ -1883,7 +1876,7 @@ margin-bottom: -35px;
     padding-bottom: 30px;
 }
 
-.swiper-testimonial.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-testimonial.swiper-container-horizontal>.swiper-pagination-bullets {
     bottom: 5px;
 }
 
@@ -2708,4 +2701,88 @@ margin-bottom: -35px;
     height: 200px;
     border: 0;
     border-radius: 18px;
+}
+
+
+
+.vital-container {
+    max-width: 450px;
+    margin: 0px auto;
+}
+
+.vital-header-bg {
+    background-image: url(../images/header-bg.png);
+    background-position: center bottom;
+    padding: 40px 0 120px 0;
+}
+
+.logo01,
+.logo02 {
+    width: 220px;
+    margin: 0px auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logo01 {
+    padding-right: 52px;
+}
+
+
+.own-movement {
+    font-family: "Exo 2";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 5.07px;
+    color: #45FF17;
+    color: rgb(69, 255, 23);
+    text-align: center;
+}
+
+.own-life {
+    font-family: "Exo 2";
+    font-style: italic;
+    font-size: 2rem;
+    letter-spacing: 6.94px;
+    color: #45FF17;
+    color: rgb(69, 255, 23);
+    text-align: center;
+    font-weight: 900;
+    background-image: url(../images/raw-line.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 30px;
+}
+
+
+.arrows-box {
+    background-image: url(../images/arrows_1.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+
+.button01 {
+    /* background: linear-gradient(90deg, #45FF17 0%, #00FFFF 100%); */
+    /* border-radius: 46px; */
+    padding: 40px 12px;
+    line-height: 38px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #080808;
+    text-transform: none;
+    margin-top: 20px;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-image: url(../images/bg-button01.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
 }
