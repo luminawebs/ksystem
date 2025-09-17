@@ -6,15 +6,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Los Mejores Platos de Comida Latina" />
-	<meta name="keywords" content="Almuerzos, Comida, Latina, Asados, Desayunos, Antojos..." />
+	<meta name="description"
+		content="VMT - Entrenamiento personal, coaching de imagen y marca personal en Kenosha. Fortalece tu cuerpo, mente y confianza con nuestros servicios especializados." />
+	<meta name="keywords"
+		content="VMT, Vital Motion Training, entrenamiento personal, coaching personal, imagen personal, marca personal, fitness, Kenosha, movimiento funcional" />
 
 
 	<link rel="icon" href="images/favicon.html">
-	<title>EL PATIO RESTAURANT | Los Mejores Sabores Latinos en un solo lugar...</title>
+	<title>VMT - Servicios | Entrenamiento Personal y Coaching en Kenosha</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap" rel="stylesheet">
-
+	<link
+		href="https://fonts.googleapis.com/css?family=Exo+2:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet" href="css/fakeLoader.css">
@@ -145,7 +149,7 @@
 
 
 	<div class="container" style="max-width: 600px;">
-		<a href="https://www.doordash.com/store/24192943?utm_source=mx_share" target="new">
+		<a href="#" data-toggle="modal" data-target="#training-appointment">
 			<div class="row">
 				<div class="col-12 mx-auto d-flex justify-content-center">
 					<div class="button-menu button-menu-01">
@@ -161,7 +165,7 @@
 
 
 
-		<a href=" ">
+		<a href="https://wa.me/12624847309" target="_blank">
 			<div class="row">
 				<div class="col-12">
 
@@ -175,7 +179,7 @@
 
 
 
-		<a href="tel:+12625645584">
+		<a href="tel:+12624847309">
 			<div class="row">
 				<div class="col-12">
 					<div class="button-menu button-menu-02">
@@ -743,6 +747,68 @@
 	<!-- end toolbar bottom -->
 
 
+
+	<!-- Training Appointment Modal -->
+	<div id="training-appointment" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" style="margin: .7rem auto;">
+			<div class="modal-content"
+				style="background-color:#FFFFFF; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" style="color: #131313">×</button>
+
+					<div class="container" style="align-content: center">
+						<div class="row" align="center">
+							<div class="col-12">
+								<div class="text">
+									<h5 class="card-title" style="font-size: 28px; align-content: center">
+										<strong>AGENDA TU ENTRENAMIENTO</strong>
+									</h5>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="padding-top: 5px; align-content: center">
+							<div class="col-12" align="center">
+								<div class="container">
+									<form id="training-form-es">
+										<input type="text" name="nombre" id="nombre-es" placeholder="Nombre" required>
+										<input type="email" name="email" id="email-es" placeholder="Correo electrónico"
+											required>
+										<input type="tel" name="telefono" id="telefono-es" placeholder="Teléfono"
+											required>
+
+										<label for="fecha-es">Seleccionar fecha</label>
+										<input type="date" name="fecha" id="fecha-es" placeholder="Fecha de entrenamiento"
+											required>
+
+										<label for="hora-es">Seleccionar hora</label>
+										<input type="time" name="hora" id="hora-es" placeholder="Hora de entrenamiento"
+											required>
+
+										<label for="servicio-es">Tipo de servicio</label>
+										<select name="servicio" id="servicio-es" required>
+											<option value="">Seleccionar servicio</option>
+											<option value="Entrenamiento Personal">Entrenamiento Personal</option>
+											<option value="Coaching Personal">Coaching Personal</option>
+											<option value="Coaching Nutricional">Coaching Nutricional</option>
+											<option value="Coaching Laboral">Coaching Laboral</option>
+											<option value="Estilo e Imagen">Estilo e Imagen</option>
+											<option value="Marca Personal">Marca Personal</option>
+										</select>
+
+										<button class="button-menu button-menu-01" type="submit"
+											style="margin-top: 20px; width: 100%;">
+											Enviar por WhatsApp
+										</button>
+									</form>
+								</div>
+								<div class="separator-medium"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>

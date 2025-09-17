@@ -4,7 +4,7 @@ $(function() {
 
   $.fakeLoader({
     spinner: "spinner1",
-    bgColor: "#fd1b1b"
+    bgColor: "#000000"
   });
 
   // link back
