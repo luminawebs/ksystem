@@ -120,6 +120,13 @@ Table of Content:
 }
 
 
+::selection {
+  background: rgb(69, 255, 23) !important;
+  color: black;
+  text-shadow: none;
+}
+
+
 /* general */
 body {
     font-family: "Exo 2", sans-serif;
@@ -128,6 +135,7 @@ body {
     font-weight: 400;
 
     background: #020202;
+    overflow-x: hidden;
 }
 
 h1,
@@ -184,9 +192,9 @@ h7 {
     line-height: 27px;
 }
 
-a {
+/* a {
     color: #131212;
-}
+} */
 
 a:focus {
     outline: 0;
@@ -611,7 +619,7 @@ textarea {
 
 .social-media-icon a i {
     font-size: 20px;
-    
+
     padding: 10px 15px;
     line-height: 38px;
     display: inline-block;
@@ -807,9 +815,11 @@ textarea {
     color: #fff !important;
 }
 
-.bg-instagram, .bg-facebook, .bg-whatsapp {
+.bg-instagram,
+.bg-facebook,
+.bg-whatsapp {
     /* background: #ffffff !important; */
-    color: rgb(69, 255, 23) ;
+    color: rgb(69, 255, 23);
     background-image: url(../images/bg-hexa.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -854,6 +864,9 @@ textarea {
 
 .separator-large {
     height: 30px;
+}
+.separator-xl {
+    height: 60px;
 }
 
 /* divider line */
@@ -1800,12 +1813,13 @@ a.button-outline:hover {
 }
 
 .swiper-custom .swiper-slide .content {
-    padding: 132px 18px;
+    padding: 60px 18px;
     border-radius: 18px;
 }
 
 .swiper-custom .swiper-slide .content h4 {
-    /* margin-bottom: 120px; */
+   color: rgb(69, 255, 23);
+   font-style: italic;
 }
 
 .swiper-pricing .swiper-slide {
@@ -2780,9 +2794,156 @@ margin-bottom: -35px;
     width: 100%;
     text-align: center;
     display: inline-block;
-    background-image: url(../images/bg-button01.svg);
+    background-image: url(../images/bg-button-01.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
+}
+
+
+.swiper01 {
+    background-image: url(../images/design01.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+.swiper01:hover {
+  background-size: cover;
+  background-position: center center;
+  background-color: #000000c7;
+  background-blend-mode:normal;
+  transition: background-blend-mode 0.5s ease;
+}
+
+
+.swiper02 {
+    background-image: url(../images/design02.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+.swiper03 {
+    background-image: url(../images/design03.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+.swiper04 {
+    background-image: url(../images/design04.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+.swiper05 {
+    background-image: url(../images/design05.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+.swiper06 {
+    background-image: url(../images/design06.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+.swiper07 {
+    background-image: url(../images/design07.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+.swiper08 {
+    background-image: url(../images/design08.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000000c7;
+    background-blend-mode: multiply;
+}
+
+
+
+.swiper-container-item {
+    padding: 10px;
+    border: 1px solid rgb(69, 255, 23) !important;
+    border-radius: 30px;
+    margin-bottom: 1px;
+}
+
+
+.button-menu-01{
+    background-image: url(../images/bg-button-02.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 30px 0px 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
+}
+
+.button-menu-02{
+    background-image: url(../images/bg-button-03.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 30px 0px 35px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+    color: #020202;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
+}
+
+
+
+.button-menu-03{
+    background-image: url(../images/bg-button-04.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 27px 0px 31px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+    color: #1ad66c !important;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
 }
