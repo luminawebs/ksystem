@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Step Overview</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column; /* mobile first: stack */
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .step {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+    }
+
+    .step-number {
+      min-width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .step-content h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .step-content p {
+      margin: 2px 0 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* connector arrows */
+    .connector {
+      font-size: 1.5rem;
+      color: #aaa;
+      text-align: center;
+    }
+
+    /* Tablet/Desktop breakpoint */
+    @media (min-width: 768px) {
+      .steps {
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .step {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .step-number {
+        margin-bottom: 10px;
+      }
+
+      .connector {
+        font-size: 2rem;
+        margin: 0 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="steps">
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>Breakthrough</h3>
+        <p>Self-Discovery</p>
+      </div>
+    </div>
+
+    <div class="connector">➜</div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>Draft</h3>
+        <p>Your Personal Brand Statement</p>
+      </div>
+    </div>
+
+    <div class="connector">➜</div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>Actions</h3>
+        <p>Put your brand into motion</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
