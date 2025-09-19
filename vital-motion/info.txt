@@ -1,8 +1,12 @@
+as you see in vital-motion folder e-menu file, you can see buttons que es vmt, paquetes vmt, marca personal, coaching personal, etcetera, each button should open a modal, each modal should have the correspondant content that is inside info.txt
 x
+
 ¿Qué es VMT?
+
 Sobre Nosotros
 Propietarios
 The VMT Experience
+
 SOBRE NOSOTROS
 Vital Motion Training
 Personal services firm offering a comprehensive coaching experience to help individuals improve their quality of life through physical movement and re-imagining their personal image.  VMT offers the following:  
