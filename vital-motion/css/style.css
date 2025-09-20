@@ -621,6 +621,10 @@ textarea {
     text-align: center;
 }
 
+.social-media-icon ul {
+    margin: 0px !important;
+}
+
 .social-media-icon ul li {
     display: inline-block;
     margin: 0 5px;
