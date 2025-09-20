@@ -1829,7 +1829,7 @@ a.button-outline:hover {
 }
 
 .swiper-custom .swiper-slide .content {
-    padding: 60px 18px;
+    padding: 40px 18px;
     border-radius: 18px;
 }
 
@@ -2822,82 +2822,137 @@ margin-bottom: -35px;
 }
 
 
-.swiper01 {
+
+.swiper01::before {
     background-image: url(../images/design01.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
-.swiper01:hover {
-    background-size: cover;
-    background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: normal;
-    transition: background-blend-mode 0.5s ease;
+
+.swiper01:hover::before,
+.swiper02:hover::before,
+.swiper03:hover::before,
+.swiper04:hover::before,
+.swiper05:hover::before,
+.swiper06:hover::before,
+.swiper07:hover::before {
+    opacity: 1 !important;
+    margin: 0px;
+    filter: grayscale(1);
+
 }
 
 
-.swiper02 {
+.swiper02::before {
     background-image: url(../images/design02.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
-.swiper03 {
+.swiper03::before {
     background-image: url(../images/design03.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
-.swiper04 {
+.swiper04::before {
     background-image: url(../images/design04.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
-.swiper05 {
+.swiper05::before {
     background-image: url(../images/design05.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
-.swiper06 {
+.swiper06::before {
     background-image: url(../images/design06.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
-.swiper07 {
+.swiper07::before {
     background-image: url(../images/design07.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
-.swiper08 {
+.swiper08::before {
     background-image: url(../images/design08.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #000000c7;
-    background-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
 }
 
 
@@ -2908,6 +2963,21 @@ margin-bottom: -35px;
     border-radius: 30px;
     margin-bottom: 1px;
 }
+
+.swiper-container-item:hover {
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+
+
+
+.swiper-custom .swiper-slide .content:hover h4 {
+    color: #000 !important;
+    text-shadow: 0px 0px 20px #000;
+    background-color: #45ff17b6 !important;
+    transition: all 0.3s ease;
+}
+
+
 
 
 .button-menu-01 {
@@ -2991,6 +3061,7 @@ margin-bottom: -35px;
     border-radius: 20px 0px 20px;
     padding-bottom: 30px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .button05:hover {
@@ -3027,7 +3098,7 @@ margin-bottom: -35px;
 .button05:hover img {
     scale: 0.9;
     transition: all 0.3s ease;
-    
+
 }
 
 .button05 .sub {
@@ -3197,6 +3268,19 @@ margin-bottom: -35px;
     }
 }
 
-.modal-header{
+.modal-header {
     border-bottom: 0;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    background: #000;
 }
