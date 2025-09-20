@@ -162,7 +162,7 @@ h2 {
     text-align: center;
 }
 
-.modal h2{
+.modal h2 {
     margin-bottom: 25px;
 }
 
@@ -2973,6 +2973,69 @@ margin-bottom: -35px;
     max-width: 490px;
 }
 
+
+.button05 {
+    padding: 15px 0px 1px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 26px;
+    color: rgb(69, 255, 23) !important;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
+    border: 2px rgba(69, 255, 23, 0.3) solid;
+    border-radius: 20px 0px 20px;
+    padding-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.button05:hover {
+    padding: 15px 0px 1px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px;
+    color: #000 !important;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
+    border: 1px rgb(69, 255, 23) solid;
+    border-radius: 20px 0px 20px;
+    padding-bottom: 30px;
+    background-color: rgb(69, 255, 23) !important;
+}
+
+.button05 img {
+    padding: 10px 0px 10px;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px auto 10px;
+    max-width: 490px;
+    height: 180px;
+}
+
+.button05:hover img {
+    scale: 0.9;
+    transition: all 0.3s ease;
+    
+}
+
+.button05 .sub {
+
+    font-weight: 100;
+}
+
+
 #escanea h4,
 #escanea h3 {
     color: rgb(69, 255, 23);
@@ -3035,7 +3098,7 @@ margin-bottom: -35px;
     font-style: italic;
 }
 
-.w-questions{
+.w-questions {
     text-align: center;
     border-radius: 20px;
     padding: 10px;
@@ -3050,85 +3113,90 @@ margin-bottom: -35px;
 
 /* ______________________________________________________ */
 
- .steps {
-      display: flex;
-      flex-direction: column; /* mobile first: stack */
-      gap: 20px;
-      width: 100%;
-      max-width: 900px;
-    }
+.steps {
+    display: flex;
+    flex-direction: column;
+    /* mobile first: stack */
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
 
-    .step {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      padding: 16px 50px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      /* justify-content: center; */
-    }
+.step {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 16px 50px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    /* justify-content: center; */
+}
 
-    .step:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
-    }
+.step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
 
-    .step-number {
-      min-width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #45FF17, #555);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
+.step-number {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #45FF17, #555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
 
-    .step-content h3 {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #333;
-    }
+.step-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
 
-    .step-content p {
-      margin: 2px 0 0;
-      font-size: 0.9rem;
-      color: #555;
-    }
+.step-content p {
+    margin: 2px 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
 
-    /* connector arrows */
-    .connector {
-      font-size: 1.5rem;
-      color: #aaa;
-      text-align: center;
-    }
+/* connector arrows */
+.connector {
+    font-size: 1.5rem;
+    color: #aaa;
+    text-align: center;
+}
 
-    /* Tablet/Desktop breakpoint */
-    @media (min-width: 1768px) {
-      .steps {
+/* Tablet/Desktop breakpoint */
+@media (min-width: 1768px) {
+    .steps {
         flex-direction: row;
         align-items: center;
         gap: 16px;
-      }
+    }
 
-      .step {
+    .step {
         flex-direction: column;
         text-align: center;
         padding: 20px;
-      }
+    }
 
-      .step-number {
+    .step-number {
         margin-bottom: 10px;
-      }
+    }
 
-      .connector {
+    .connector {
         font-size: 2rem;
         margin: 0 6px;
-      }
     }
+}
+
+.modal-header{
+    border-bottom: 0;
+}
