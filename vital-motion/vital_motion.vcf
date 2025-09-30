@@ -1,12 +1,11 @@
 BEGIN:VCARD
 VERSION:3.0
-N: EL PATIO RESTAURANT
-FN: El Patio Restaurant
-ORG:Restaurante Comida Latina
-URL:https://www.kenoshasystem.com/elpatiorestaurant/
-TITLE:Restaurante/Comida y Sabor Latino
-TEL;TYPE=WORK,VOICE:+12625645584
-EMAIL;TYPE=PREF,INTERNET: 
-ADR:;;3200 60th St, Kenosha, WI 53144, United States
-LABEL:3200 60th St, Kenosha, WI 53144, United States
+N:Training;Vital Motion;;;
+FN:Vital Motion Training
+ORG:Vital Motion Training
+TITLE:Personal Training & Coaching
+URL:https://ksystemgroup.com/vitalmotion/
+TEL;TYPE=WORK,VOICE:+12623411927
+EMAIL;TYPE=INTERNET;TYPE=WORK:vitalmotiontrainingk@gmail.com
+ADR;TYPE=WORK:;;Pleasant Prairie, Kenosha, WI 53144;WI;USA;;
 END:VCARD
