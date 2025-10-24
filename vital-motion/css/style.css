@@ -2751,12 +2751,13 @@ margin-bottom: -35px;
 .vital-header-bg {
     background-image: url(../images/header-bg.png);
     background-position: center bottom;
-    padding: 40px 0 120px 0;
+    background-size: cover;
+    padding: 20px 0 70px 0;
 }
 
 .logo01,
 .logo02 {
-    width: 220px;
+    width: 170px;
     margin: 0px auto;
     display: block;
     margin-bottom: 10px;
