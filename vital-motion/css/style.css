@@ -1840,6 +1840,7 @@ a.button-outline:hover {
 .swiper-custom .swiper-slide .content h4 {
     color: rgb(69, 255, 23);
     font-style: italic;
+    font-weight: 900;
 }
 
 .swiper-pricing .swiper-slide {
@@ -2752,7 +2753,7 @@ margin-bottom: -35px;
     background-image: url(../images/header-bg.png);
     background-position: center bottom;
     background-size: cover;
-    padding: 20px 0 70px 0;
+    padding: 20px 0 45px 0;
 }
 
 .logo01,
@@ -2981,13 +2982,13 @@ margin-bottom: -35px;
 
 .swiper-container-item {
     padding: 10px;
-    border: 1px solid rgb(69, 255, 23) !important;
+    border: 3px solid rgba(69, 255, 23, 0.3) !important;
     border-radius: 30px;
     margin-bottom: 1px;
 }
 
 .swiper-container-item:hover {
-    border: 1px solid rgb(255, 255, 255) !important;
+    border: 3px solid rgba(255, 255, 255, 0) !important;
 }
 
 
