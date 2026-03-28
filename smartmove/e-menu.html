@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash-icon.png">
+	<script src="https://unpkg.com/lucide@latest"></script>
 
 	<style>
 		/* ── Animated background ── */
@@ -50,6 +51,27 @@
 			50%  { transform: scale(1.10) translateX(1%)  translateY(1%);  opacity: 0.13; }
 			75%  { transform: scale(1.06) translateX(2%)  translateY(-1%); opacity: 0.15; }
 			100% { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
+		}
+		/* ── Swiper icon styles ── */
+		.sswiper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			padding: 18px 10px;
+			min-height: 110px;
+		}
+		.sswiper .swiper-icon {
+			width: 36px;
+			height: 36px;
+			stroke: #45FF17;
+			stroke-width: 1.5;
+			flex-shrink: 0;
+			transition: transform 0.3s ease;
+		}
+		.sswiper:hover .swiper-icon {
+			transform: scale(1.18);
 		}
 	</style>
 </head>
@@ -107,7 +129,8 @@
 			<div class="swiper-slide" style="margin-right: -8px;">
 				<a href="#" data-toggle="modal" data-target="#sobre-nosotros">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper01 sswiper">
+						<div class="content text-center bg-blue sswiper">
+							<i data-lucide="layout-grid" class="swiper-icon"></i>
 							<h4>NUESTROS<br> SERVICIOS</h4>
 						</div>
 					</div>
@@ -117,7 +140,8 @@
 			<div class="swiper-slide" style="margin-right: 15px;">
 				<a href="#" data-toggle="modal" data-target="#mudanza-completa">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper03 sswiper">
+						<div class="content text-center bg-blue sswiper">
+							<i data-lucide="truck" class="swiper-icon"></i>
 							<h4>MUDANZA<br> COMPLETA</h4>
 						</div>
 					</div>
@@ -127,7 +151,8 @@
 			<div class="swiper-slide" style="margin-right: 15px;">
 				<a href="#" data-toggle="modal" data-target="#empaque">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper04 sswiper">
+						<div class="content text-center bg-blue sswiper">
+							<i data-lucide="package" class="swiper-icon"></i>
 							<h4>EMPAQUE &<br> DESEMPAQUE</h4>
 						</div>
 					</div>
@@ -137,7 +162,8 @@
 			<div class="swiper-slide" style="margin-right: 15px;">
 				<a href="#" data-toggle="modal" data-target="#ofertas">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper05 sswiper">
+						<div class="content text-center bg-blue sswiper">
+							<i data-lucide="tag" class="swiper-icon"></i>
 							<h4>OFERTAS<br> ESPECIALES</h4>
 						</div>
 					</div>
@@ -147,7 +173,8 @@
 			<div class="swiper-slide" style="margin-right: 15px;">
 				<a href="#" data-toggle="modal" data-target="#nuestra-historia">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper06 sswiper">
+						<div class="content text-center bg-blue sswiper">
+							<i data-lucide="users" class="swiper-icon"></i>
 							<h4>NUESTRA<br> HISTORIA</h4>
 						</div>
 					</div>
@@ -691,6 +718,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.big-slide.js"></script>
 	<script src="js/main.js"></script>
+	<script>lucide.createIcons();</script>
 
 </body>
 
