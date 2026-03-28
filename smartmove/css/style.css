@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 Maxui - Bootstrap 4 Based Mobile Template
 Author : aStylers
@@ -415,6 +415,7 @@ textarea {
     margin-top: 30px;
     width: 100%;
 }
+
 .custom-control-input:checked~.custom-control-label::before {
     background: #fff;
     border-color: #fff;
@@ -1739,6 +1740,86 @@ a.button-outline:hover {
     margin: 0 5px;
     color: #8998ff;
     font-size: 8px;
+}
+
+
+/*swiper slider*/
+.swiper-container {
+    padding: 0 15px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .img img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-style {
+    padding: 30px 15px;
+}
+
+.swiper-style .swiper-slide {
+    width: 125px;
+}
+
+.swiper-style .swiper-slide .content {
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+.swiper-style .swiper-slide .info-statistic {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.swiper-style .swiper-slide .icon {
+    margin-top: 25px;
+}
+
+.swiper-style .swiper-slide .icon i {
+    font-size: 60px;
+    display: inline-block;
+}
+
+.swiper-style-full .content {
+    /* background: #eee; */
+    /* border-radius: 18px; */
+    padding: 20px;
+}
+
+.swiper-style-full .content h5 {
+    margin-bottom: 10px;
+}
+
+.swiper-custom .swiper-slide {
+    width: 270px;
+}
+
+.swiper-custom .swiper-slide .content {
+    padding: 132px 18px 10px;
+    border-radius: 18px;
+}
+
+.swiper-custom .swiper-slide .content h4 {
+    /* margin-bottom: 120px; */
+}
+
+.swiper-pricing .swiper-slide {
+    width: 220px;
 }
 
 .card-avatar-image .title-name {

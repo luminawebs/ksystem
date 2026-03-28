@@ -2,10 +2,6 @@ $(function() {
 
   'use strict';
 
-  $.fakeLoader({
-    spinner: "spinner1",
-    bgColor: "#000000"
-  });
 
   // link back
   $('.link-back').on('click', function() {
