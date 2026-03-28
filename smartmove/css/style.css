@@ -130,11 +130,11 @@ Table of Content:
 /* general */
 body {
     font-family: "Exo 2", sans-serif;
-    color: #000000;
+    color: #000;
     font-size: 16px;
     font-weight: 400;
 
-    background: #020202;
+    background: #fff;
     overflow-x: hidden;
 }
 
@@ -1567,7 +1567,7 @@ a.button-outline:hover {
 .card {
     border-radius: 18px;
     border: 0;
-    background: #000000;
+    /* background: #fff; */
 }
 
 .card-outline {
@@ -2764,7 +2764,7 @@ margin-bottom: -35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 300px;
     overflow: visible;
     width: 280px;
@@ -2773,7 +2773,7 @@ margin-bottom: -35px;
 
 .green-line {
     border-radius: 400px;
-    border: #45FF17 1px solid;
+    border: #45FF17 0px solid;
     padding: 3px;
 }
 
@@ -2792,8 +2792,7 @@ margin-bottom: -35px;
     font-style: italic;
     font-size: 1.5rem;
     letter-spacing: 5.07px;
-    color: #45FF17;
-    color: rgb(69, 255, 23);
+    color: #1a3a5c;
     text-align: center;
 }
 
@@ -2802,11 +2801,10 @@ margin-bottom: -35px;
     font-style: italic;
     font-size: 2rem;
     letter-spacing: 6.94px;
-    color: #45FF17;
-    color: rgb(69, 255, 23);
+    color: #1a3a5c;
     text-align: center;
     font-weight: 900;
-    background-image: url(../images/raw-line.svg);
+    background-image: url(../images/raw-line-black.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-bottom: 30px;
@@ -3214,11 +3212,11 @@ margin-bottom: -35px;
     border-radius: 20px;
     padding: 10px;
     margin: 30px 30px;
-    background-color: #000;
-    box-shadow: #333 0px 0px 10px;
+    background-color: #f0f4f8;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 10px;
     font-weight: 900;
     font-style: italic;
-    color: rgb(69, 255, 23);
+    color: #1a3a5c;
 }
 
 
@@ -3313,6 +3311,7 @@ margin-bottom: -35px;
 }
 
 #bg-video {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -3322,5 +3321,5 @@ margin-bottom: -35px;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
-    background: #000;
+    background: #fff;
 }

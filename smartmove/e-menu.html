@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-		content="Ofrecemos servicios de mudanza confiables con profesionales capacitados, asegurando una transición sin problemas." />
+		content="Smart Move Solutions LLC - Ofrecemos servicios de mudanza confiables con profesionales capacitados, asegurando una transición sin problemas." />
 	<meta name="keywords"
-		content="VMT, Vital Motion Training, entrenamiento personal, coaching personal, imagen personal, marca personal, fitness, Kenosha, movimiento funcional" />
+		content="servicio de mudanza, mudanza completa, entrega, empaque, organización, mudanza residencial, mudanza comercial" />
 
 	<link rel="icon" href="images/favicon.html">
 	<title>Smart Move Solutions LLC | Servicios de Mudanza</title>
@@ -22,6 +22,36 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash-icon.png">
+
+	<style>
+		/* ── Animated background ── */
+		body {
+			position: relative;
+			z-index: 0;
+		}
+
+		body::before {
+			content: '';
+			position: fixed;
+			inset: 0;
+			z-index: -1;
+			background-image: url('images/carrier_smart_move.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			opacity: 0.13;
+			animation: bgKenBurns 20s ease-in-out infinite alternate;
+			will-change: transform, opacity;
+		}
+
+		@keyframes bgKenBurns {
+			0%   { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
+			25%  { transform: scale(1.06) translateX(-1%) translateY(-1%); opacity: 0.15; }
+			50%  { transform: scale(1.10) translateX(1%)  translateY(1%);  opacity: 0.13; }
+			75%  { transform: scale(1.06) translateX(2%)  translateY(-1%); opacity: 0.15; }
+			100% { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
+		}
+	</style>
 </head>
 
 
@@ -49,7 +79,7 @@
 					<div class="green-line">
 						<div class="logo02">
 							<a href="index.html" target="_blank" rel="noopener noreferrer"> <img
-									src="images/logo_smart_move.png" alt="Logo"></a>
+									src="images/logo_smart_move.png" alt="Smart Move Solutions LLC Logo"></a>
 						</div>
 					</div>
 				</div>
@@ -66,9 +96,7 @@
 
 
 
-
 	</div>
-
 
 
 
@@ -77,7 +105,7 @@
 		<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 
 			<div class="swiper-slide" style="margin-right: -8px;">
-				<a href="#" data-toggle="modal" data-target="#desayunos">
+				<a href="#" data-toggle="modal" data-target="#sobre-nosotros">
 					<div class="swiper-container-item">
 						<div class="content text-center bg-blue swiper01 sswiper">
 							<h4>NUESTROS<br> SERVICIOS</h4>
@@ -86,18 +114,8 @@
 				</a>
 			</div>
 
-			<!-- <div class="swiper-slide" style="margin-right: -8px;">
-				<a href="paquetes.html">
-					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper02 sswiper">
-							<h4>PAQUETES<br> VMT</h4>
-						</div>
-					</div>
-				</a>
-			</div> -->
-
 			<div class="swiper-slide" style="margin-right: 15px;">
-				<a href="#" data-toggle="modal" data-target="#antojitos">
+				<a href="#" data-toggle="modal" data-target="#mudanza-completa">
 					<div class="swiper-container-item">
 						<div class="content text-center bg-blue swiper03 sswiper">
 							<h4>MUDANZA<br> COMPLETA</h4>
@@ -107,60 +125,48 @@
 			</div>
 
 			<div class="swiper-slide" style="margin-right: 15px;">
-				<a href="#" data-toggle="modal" data-target="#latina">
+				<a href="#" data-toggle="modal" data-target="#empaque">
 					<div class="swiper-container-item">
 						<div class="content text-center bg-blue swiper04 sswiper">
-							<h4>ENTREGAS &<br> PEDIDOS</h4>
+							<h4>EMPAQUE &<br> DESEMPAQUE</h4>
 						</div>
 					</div>
 				</a>
 			</div>
 
 			<div class="swiper-slide" style="margin-right: 15px;">
-				<a href="#" data-toggle="modal" data-target="#combos">
+				<a href="#" data-toggle="modal" data-target="#ofertas">
 					<div class="swiper-container-item">
 						<div class="content text-center bg-blue swiper05 sswiper">
-							<h4>EMPAQUE &<br> ORGANIZACIÓN</h4>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="swiper-slide" style="margin-right: 15px;">
-				<a href="#" data-toggle="modal" data-target="#tacos">
-					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper06 sswiper">
 							<h4>OFERTAS<br> ESPECIALES</h4>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<!-- <div class="swiper-slide" style="margin-right: 15px;">
-				<a href="#" data-toggle="modal" data-target="#bebidas">
+			<div class="swiper-slide" style="margin-right: 15px;">
+				<a href="#" data-toggle="modal" data-target="#nuestra-historia">
 					<div class="swiper-container-item">
-						<div class="content text-center bg-blue swiper07 sswiper">
-							<h4>ESTILO &<br> IMAGEN</h4>
+						<div class="content text-center bg-blue swiper06 sswiper">
+							<h4>NUESTRA<br> HISTORIA</h4>
 						</div>
 					</div>
 				</a>
-			</div> -->
+			</div>
 
 		</div>
 	</div>
-
-
 
 
 	<div class="separator-xl"></div>
 
 
 	<div class="container" style="max-width: 600px;">
-		<a href="#" data-toggle="modal" data-target="#training-appointment">
+		<a href="https://wa.me/12624847309" target="_blank" rel="noopener noreferrer">
 			<div class="row">
 				<div class="col-12 mx-auto d-flex justify-content-center">
 					<div class="button-menu button-menu-01">
-						AGENDA TU <br> ENTRENAMIENTO
+						SOLICITAR<br> COTIZACIÓN
 					</div>
 				</div>
 			</div>
@@ -180,27 +186,17 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="button-menu button-menu-02">
-						LLÁMANOS
+						LLAMAR: 262-484-7309
 					</div>
 				</div>
 			</div>
 		</a>
 
-		<a href="https://maps.app.goo.gl/wtYUtPy91afha7pt7" target="_blank" rel="noopener noreferrer">
+		<a href="tel:+18134608601" target="_blank">
 			<div class="row">
 				<div class="col-12">
 					<div class="button-menu button-menu-02">
-						UBICACIÓN
-					</div>
-				</div>
-			</div>
-		</a>
-
-		<a href="#" data-toggle="modal" data-target="#horarios">
-			<div class="row">
-				<div class="col-12">
-					<div class="button-menu button-menu-02">
-						HORARIOS
+						LLAMAR: 813-460-8601
 					</div>
 				</div>
 			</div>
@@ -242,22 +238,14 @@
 
 
 
-
-
-
-
-
-
 	<div class="separator-medium"></div>
 	<!-- end separator -->
 
 	<div class="social-media-icon">
 		<ul style="padding: 0px !important; margin: 0px !important;">
 
-			<!-- <li><a href=" " target="new"><i class="icon ion-logo-instagram bg-instagram"></i></a></li> -->
-			<li><a href="https://www.facebook.com/profile.php?id=100069884311648" target="new"><i
+			<li><a href="https://www.facebook.com/profile.php?id=61559980468200" target="new"><i
 						class="icon ion-logo-facebook bg-facebook"></i></a></li>
-			<!-- <li><a href="#" target="new"><i class="icon ion-logo-youtube bg-facebook"></i></a></li> -->
 			<li><a href="https://wa.me/12624847309" target="_blank" rel="noopener noreferrer"><i
 						class="icon ion-logo-whatsapp bg-whatsapp"></i></a></li>
 
@@ -271,7 +259,7 @@
 			<div class="content-box shadow-sm">
 
 				<p class="made-by text-small">
-					<font color="#FFFFFF">Creado por</font> <a href="https://kenoshasystem.com/"
+					<font color="#1a3a5c">Creado por</font> <a href="https://kenoshasystem.com/"
 						target="new">KSystemgroup</a>
 				</p>
 			</div>
@@ -280,64 +268,21 @@
 	<!-- end footer -->
 
 
-
-
-
-	<div id="latina" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+	<!-- ============================================================ -->
+	<!-- MODAL: NUESTROS SERVICIOS -->
+	<!-- ============================================================ -->
+	<div id="sobre-nosotros" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" style=" color: #090909">×</button>
-					<div class="container" style="align-content: center">
-						<div class="row" style="padding-top: 5px; align-content: center">
-							<div class="col-12" align="center">
-
-								<h2> ENTREGAS & PEDIDOS </h2>
-
-
-								<h3 class="sub-line">Arm Swings</h3>
-								<video src="vid/arm-swing.mp4" type="video/mp4" controls width="100%"
-									height="470px"></video>
-
-
-								<h3 class="sub-line">Clean Press</h3>
-								<video src="vid/clean-press.mp4" type="video/mp4" controls width="100%"
-									height="470px"></video>
-
-
-								<h3 class="sub-line">Supine Rows</h3>
-								<video src="vid/supine-rows.mp4" type="video/mp4" controls width="100%"
-									height="470px"></video>
-
-								<!-- <img src="images/carrierteam_smart_move.jpg" alt="" width="100%"> -->
-
-
-								<div class="separator-medium"></div>
-								<!-- <P>[Servicio Placeholder - Más información pronto]</P> -->
-								<div class="separator-medium"></div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div id="desayunos" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
+			<div class="modal-content">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
 					<div class="container" style="align-content: center">
 						<div class="row">
 							<div class="col-12">
 
-
 								<h2>NUESTROS SERVICIOS</h2>
 
-								<!-- Bootstrap Tabs for Desayunos Modal -->
+								<!-- Bootstrap Tabs -->
 								<ul class="nav nav-tabs" id="vmtTabs" role="tablist">
 									<li class="nav-item" role="presentation">
 										<a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1"
@@ -349,7 +294,7 @@
 									</li>
 									<li class="nav-item" role="presentation">
 										<a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab"
-											aria-controls="tab3" aria-selected="false">THE VMT EXPERIENCE</a>
+											aria-controls="tab3" aria-selected="false">TODOS LOS SERVICIOS</a>
 									</li>
 								</ul>
 								<div class="tab-content" id="vmtTabsContent" style="margin-bottom: 1rem;">
@@ -357,37 +302,27 @@
 										aria-labelledby="tab1-tab">
 
 										<div class="sobre-nosotros">
-											<h3>NUESTROS SERVICIOS</h3>
+											<h3>SOBRE NOSOTROS</h3>
 
 											<h4>Smart Move Solutions LLC</h4>
-											<p>Firma de servicios personales que ofrece una experiencia integral de
-												coaching para ayudar a las personas a mejorar su calidad de vida a
-												través del movimiento físico y la reinvención de su imagen personal. VMT
-												ofrece lo siguiente:</p>
+											<p>Ofrecemos servicios de mudanza confiables con profesionales capacitados,
+												asegurando una transición sin problemas. Ya sea que te mudes a pocas
+												cuadras o a otro estado, nos encargamos de cada paso del proceso con
+												cuidado y dedicación.</p>
 
-											<img src="images/carrierteam_smart_move.jpg" alt="" width="100%"
-												style="border-radius:20px ;">
+											<img src="images/carrierteam_smart_move.jpg" alt="Equipo Smart Move"
+												width="100%" style="border-radius:20px; margin-bottom:16px;">
 
-											<h4>Entrenamiento personal:</h4>
-											<p>Movimiento, fuerza, equilibrio y nutrición.</p>
-
-											<p style="text-align: center; margin: 0px 20%; ">
-												<img src="images/carrier_smart_move.jpg" alt="" width="100%"
-													style="border-radius:20px;">
-											</p>
-
-											<h4>Coaching personal:</h4>
-											<p>Marca personal, imagen y estilo, y coaching profesional.</p>
+											<img src="images/carrier_smart_move.jpg" alt="Camión Smart Move"
+												width="100%" style="border-radius:20px; margin-bottom:16px;">
 
 											<h4>Nuestra Misión</h4>
-											<p>Empoderar a las personas para construir fuerza y confianza y alcanzar su
-												máximo potencial.</p>
+											<p>Brindar un servicio responsable, puntual y cuidadoso, asegurándonos de
+												que cada cliente tenga una experiencia tranquila y satisfactoria.</p>
 
-											<h4>Visión</h4>
-											<p>Inspirar fuerza y confianza a través del movimiento funcional y el
-												rendimiento transformador. Visualizamos individuos que prosperan con
-												resiliencia y vitalidad, empoderados por el fitness y la claridad de
-												propósito, en cada etapa de la vida.</p>
+											<h4>Nuestro Compromiso</h4>
+											<p>Más que una compañía de mudanzas, somos una familia ayudando a otras
+												familias a comenzar nuevos capítulos.</p>
 
 											<div class="own-movement" style="margin-top: 20px;">SMART MOVE
 											</div>
@@ -399,42 +334,33 @@
 
 										<div class="sobre-nosotros">
 
-											<h3>NUESTRO EQUIPO</h3>
+											<h3>NUESTROS PROPIETARIOS</h3>
 
-											<div style="margin: 0px 20% 5%; overflow: hidden; border-radius: 20px;">
-												<img src="images/owners.png" width="100%" alt="">
+											<div style="overflow: hidden; border-radius: 20px; margin-bottom:16px;">
+												<img src="images/smart_move_propietarios.jpeg" width="100%"
+													alt="Camilo y Karen">
 											</div>
-											<p><strong>Jose Melendez</strong> y <strong>Angie Avirama</strong> han
-												estado casados por 20 años y residen en el área de Kenosha desde 2010.
-											</p>
-											<ul>
-												<li><strong>Jose:</strong> Ejecutivo con más de 35 años de experiencia
-													apoyando marcas icónicas globales. Experto en Finanzas y Cadena de
-													Suministro, a nivel nacional e internacional.
-													<br><br>
-													Entrenamiento personal certificado por la ISSA y fitness para
-													personas mayores certificado por la ISSA.
 
+											<h4>Nuestra Historia</h4>
+											<p>Somos Camilo y Karen, una pareja emprendedora que decidió convertir el
+												esfuerzo, la experiencia y los sueños en un proyecto de vida: nuestra
+												compañía de mudanzas.</p>
+											<p>Aunque comenzamos oficialmente hace algunos años en Miami, nuestro
+												camino en este oficio empezó mucho antes, en nuestro país de origen.
+												Allí aprendimos el valor del trabajo duro, la responsabilidad y la
+												importancia de cuidar cada detalle, especialmente cuando se trata de
+												algo tan importante como el hogar de una familia.</p>
+											<p>Al llegar a Estados Unidos, decidimos apostar por lo que sabíamos hacer
+												bien y por lo que nos apasiona: ayudar a las personas en uno de los
+												momentos más importantes de sus vidas, una mudanza. Sabemos que no se
+												trata solo de transportar objetos, sino de mover historias, recuerdos y
+												nuevos comienzos.</p>
+											<p>Somos padres de tres hijos, quienes son nuestro mayor motor y la razón
+												por la que cada día nos levantamos con más ganas de trabajar, crecer y
+												dar lo mejor de nosotros.</p>
 
-												</li>
-												<br><br>
-												<li><strong>Angie:</strong> Consultora de Imagen Personal, organizadora
-													comunitaria,
-													profesora y especialista en marketing digital.
-													<br><br>
-													Entrenador personal certificado por la ISSA y nutricionista
-													certificado por la ISSA.
-												</li>
-											</ul>
-											<!-- <p>Ambos son <strong>Entrenadores Personales Certificados por ISSA</strong>.
-											</p> -->
-
-
-
-											<h5 style="text-align: center; margin-top: 50px;">El fitness ha tenido un
-												enorme impacto en nuestras vidas</h5>
-											<h5 class="own-life" style="letter-spacing: 0px;">¡VMT es nuestra manera de
-												retribuir!</h5>
+											<h5 style="text-align: center; margin-top: 30px;">Una familia ayudando a otras familias a comenzar nuevos capítulos.</h5>
+											<div class="own-life" style="letter-spacing: 0px; margin-top: 10px;">Smart Move Solutions LLC</div>
 
 										</div>
 
@@ -442,67 +368,54 @@
 									<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
 
 										<h3>POR QUÉ ELEGIRNOS</h3>
-										<p>Una experiencia de coaching diseñada para alinear tu cuerpo, tu imagen y tu
-											identidad, para que puedas moverte por la vida con poder, presencia y
-											propósito.</p>
+										<p>Garantizamos una mudanza fluida y sin estrés, con profesionales
+											experimentados que tratan tus pertenencias con el máximo cuidado.</p>
 
-										<p><strong>Lo que ofrece la Experiencia VMT</strong></p>
-										<ul>
-											<li>Coaching Fitness – Entrenamiento funcional y programas de fuerza
-												adaptados a tus objetivos.</li>
-											<li>Desarrollo de Marca Personal – Define cómo te presentas, en lo personal
-												y profesional.</li>
-											<li>Asesoría de Estilo – Estilismo con confianza, análisis de color personal
-												y guía de vestuario.</li>
-											<li>Coaching Laboral y Profesional – Ayudándote a incrementar tu impacto.
-											</li>
+										<p><strong>Nuestros Servicios de Mudanza</strong></p>
+										<ul style="text-align:left;">
+											<li>🏠 Mudanzas Residenciales</li>
+											<li>🏢 Mudanzas Comerciales</li>
+											<li>📦 Empaque y Desempaque</li>
+											<li>⬆️ Carga y Descarga</li>
+											<li>🛋️ Montaje y Desmontaje de Muebles</li>
+											<li>🚨 Mudanzas de Emergencia</li>
+											<li>🛒 Entrega de Compra de Muebles</li>
+											<li>🏋️ Traslado de Objetos Pesados</li>
+											<li>🧹 Limpieza Post Mudanza</li>
 										</ul>
-										<br><br>
-										<p><strong>Beneficios del Movimiento</strong></p>
-										<p>¡El movimiento es un camino hacia un YO más fuerte, saludable y seguro!</p>
+
+										<img src="images/services_smartmove.jpg" alt="Servicios de Mudanza"
+											width="100%" style="border-radius: 20px; margin: 16px 0;">
 
 										<div class="steps">
 											<div class="step">
 												<div class="step-number">1</div>
 												<div class="step-content">
-													<h3>Siéntete Mejor</h3>
+													<h3>Contáctanos</h3>
+													<p>Cotización gratis</p>
 												</div>
 											</div>
 
 											<div class="step">
 												<div class="step-number">2</div>
 												<div class="step-content">
-													<h3>Hazte Más Fuerte</h3>
+													<h3>Planificamos</h3>
+													<p>Agendamos tu mudanza</p>
 												</div>
 											</div>
 
 											<div class="step">
 												<div class="step-number">3</div>
 												<div class="step-content">
-													<h3>Vive Más Tiempo</h3>
+													<h3>Nos Movemos</h3>
+													<p>Transición sin problemas</p>
 												</div>
 											</div>
 										</div>
 
-										<h4 style="text-align: center; margin: 25px 0px;">Porque la confianza no se
-											trata solo de cómo luces—Es cómo te mueves, cómo te sientes y cómo llevas tu
-											historia.</h4>
-
-										<p><strong>Una sola Kettlebell, infinitos entrenamientos</strong></p>
-
-										<img src="images/vmt-exp01.jpg" alt="" width="100%"
-											style="border-radius: 20px;">
-										<p>Perfecta para gimnasios en casa, clientes que viajan y adultos con poco
-											tiempo.</p><br>
-
-										<img src="images/vmt-exp02.jpg" alt="" width="100%"
-											style="border-radius: 20px;">
-										<p>No necesitas más equipo – necesitas una mejor programación.</p>
+										<div class="separator-medium"></div>
 									</div>
 								</div>
-
-
-
 
 
 								<div class="separator-medium"></div>
@@ -520,93 +433,66 @@
 	</div>
 
 
-
-
-
-	<div id="antojitos" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+	<!-- ============================================================ -->
+	<!-- MODAL: MUDANZA COMPLETA -->
+	<!-- ============================================================ -->
+	<div id="mudanza-completa" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
+			<div class="modal-content">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
 					<div class="container" style="align-content: center">
 						<div class="row" style="padding-top: 5px; align-content: center">
 							<div class="col-12" align="center">
 
-								<h2>MUDANZA COMPLETA</h2>
+								<h2>SERVICIO DE MUDANZA COMPLETA</h2>
 
-								<div>
+								<img src="images/carrierteam_smart_move.jpg" alt="Equipo de Mudanza" width="100%"
+									style="border-radius: 20px; margin-bottom:16px;">
 
-									<h3>Viaje de Autodescubrimiento</h3>
-									<img src="images/services_smartmove.jpg" alt="" width="100%" style="border-radius: 20px;">
+								<h4 style="text-align: center; font-weight: 600; font-style: italic; margin: 30px 0px;">
+									Nos encargamos de cada paso de tu mudanza para que tú puedas enfocarte en tu nuevo
+									comienzo.</h4>
 
-									<h4
-										style="text-align: center; font-weight: 600; font-style: italic; margin: 30px 0px;">
-										Mentalidades y comportamientos necesarios para estar en un espacio de
-										posibilidades, comprometerse y crear resultados sin precedentes.
-									</h4>
-
-									<div class="row">
-										<div class="col-lg-6">
-											<img src="images/pbranding01.jpg" alt="" width="100%"
-												style="border-radius: 20px;">
-											POSIBILIDAD vs LIMITACIÓN
-										</div>
-										<div class="col-lg-6">
-											<img src="images/pbranding02.jpg" alt="" width="100%"
-												style="border-radius: 20px;">
-											COMPROMISO vs AZAR
-										</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<img src="images/carrier_smart_move.jpg" alt="Mudanza Residencial"
+											width="100%" style="border-radius: 20px;">
+										Mudanza Residencial
 									</div>
-
-									<div class="row">
-										<div class="col-lg-6 mx-auto">
-											<img src="images/pbranding03.jpg" alt="" width="100%"
-												style="border-radius: 20px;">
-											RUPTURAS vs PROBLEMAS
-										</div>
+									<div class="col-lg-6">
+										<img src="images/services_smartmove.jpg" alt="Mudanza Comercial" width="100%"
+											style="border-radius: 20px;">
+										Mudanza Comercial
 									</div>
-
-									<h5 class="p-branding">Marca Personal <br> = <br> Tu Reputación </h5>
-
-									<h5 class="w-questions">
-										¿Quién eres TÚ?<br>
-										¿Por qué haces lo que haces?<br>
-										¿Cuál es TU propósito?<br>
-										¿TU misión?<br>
-										¿Cuáles son TUS metas?<br>
-										¿Apuntas a un BHAG?<br>
-									</h5>
 								</div>
 
-								<div class="steps">
+								<div class="steps" style="margin-top:20px;">
 									<div class="step">
 										<div class="step-number">1</div>
 										<div class="step-content">
-											<h3>Descubrimiento</h3>
-											<p>Autodescubrimiento</p>
+											<h3>Cotización Gratis</h3>
+											<p>Rápida y transparente</p>
 										</div>
 									</div>
-
 									<div class="step">
 										<div class="step-number">2</div>
 										<div class="step-content">
-											<h3>Borrador</h3>
-											<p>Tu Declaración de Marca Personal</p>
+											<h3>Empacamos</h3>
+											<p>Empaque profesional</p>
 										</div>
 									</div>
-
 									<div class="step">
 										<div class="step-number">3</div>
 										<div class="step-content">
-											<h3>Acciones</h3>
-											<p>Pon tu marca en movimiento</p>
+											<h3>Entregamos</h3>
+											<p>Seguro y a tiempo</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="separator-medium"></div>
 							</div>
-
 
 						</div>
 					</div>
@@ -617,9 +503,12 @@
 	</div>
 
 
-	<div id="combos" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+	<!-- ============================================================ -->
+	<!-- MODAL: EMPAQUE Y DESEMPAQUE -->
+	<!-- ============================================================ -->
+	<div id="empaque" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
+			<div class="modal-content">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
 					<div class="container" style="align-content: center">
@@ -627,13 +516,23 @@
 							<div class="col-12" align="center">
 
 								<h2>EMPAQUE Y ORGANIZACIÓN</h2>
-								<img src="images/services_smartmove.jpg" alt="" width="100%">
 
+								<img src="images/services_smartmove.jpg" alt="Empaque y Organización" width="100%"
+									style="border-radius: 20px; margin-bottom:16px;">
 
 								<div class="separator-medium"></div>
-								<P>[Servicio Placeholder - Más información pronto]</P>
-								<div class="separator-medium"></div>
+								<p><strong>Manejamos tus pertenencias con cuidado, usando materiales de calidad para
+										asegurar que todo llegue sano y salvo a tu nuevo hogar.</strong></p>
 
+								<ul style="text-align:left;">
+									<li>📦 Empaque profesional con materiales de calidad</li>
+									<li>🔓 Desempaque completo y colocación en destino</li>
+									<li>🛋️ Montaje y desmontaje de muebles</li>
+									<li>🏋️ Manejo de objetos pesados y especiales</li>
+									<li>🧹 Servicio de limpieza post mudanza</li>
+								</ul>
+
+								<div class="p-branding">Empaque Profesional<br> = <br> Tranquilidad Total</div>
 
 								<div class="separator-medium"></div>
 							</div>
@@ -646,9 +545,13 @@
 		</div>
 	</div>
 
-	<div id="tacos" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+
+	<!-- ============================================================ -->
+	<!-- MODAL: OFERTAS ESPECIALES -->
+	<!-- ============================================================ -->
+	<div id="ofertas" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
+			<div class="modal-content">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
 					<div class="container" style="align-content: center">
@@ -656,35 +559,26 @@
 							<div class="col-12" align="center">
 
 								<h2>OFERTAS ESPECIALES</h2>
-								<img src="images/carrier_smart_move.jpg" alt="" width="100%" style="border-radius: 20px;">
+								<img src="images/carrier_smart_move.jpg" alt="Ofertas Especiales" width="100%"
+									style="border-radius: 20px; margin-bottom:16px;">
 
 								<div class="separator-medium"></div>
 
-								<div class="row">
-									<div class="col-lg-6">
-										<img src="images/coachingl01.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Hoja de Vida de Alto Impacto
-									</div>
-									<div class="col-lg-6">
-										<img src="images/coachingl02.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Entrevista de Alto Impacto
-									</div>
+								<h4 style="text-align: center; font-weight: 900; font-style: italic; margin: 40px;">
+									🎉 ¡20% DE DESCUENTO en todos los pedidos de servicio de mudanza completa!</h4>
+
+								<div class="w-questions">
+									Contáctanos hoy<br>
+									y obtén tu cotización gratis<br>
+									Tel: 262-484-7309<br>
+									o: 813-460-8601
 								</div>
 
-								<div class="row">
-									<div class="col-lg-6">
-										<img src="images/coachingl03.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Discurso de Ventas de Alto Impacto
-									</div>
-									<div class="col-lg-6">
-										<img src="images/coachingl04.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Mentoría de Carrera
-									</div>
-								</div>
+								<img src="images/carrierteam_smart_move.jpg" alt="Nuestro Equipo" width="100%"
+									style="border-radius: 20px; margin-top: 16px;">
 
 								<div class="separator-medium"></div>
 							</div>
-
 
 						</div>
 					</div>
@@ -695,95 +589,56 @@
 	</div>
 
 
-
-	<div id="bebidas" class="modal fade register-modal" style="display: none;" aria-hidden="true">
+	<!-- ============================================================ -->
+	<!-- MODAL: NUESTRA HISTORIA -->
+	<!-- ============================================================ -->
+	<div id="nuestra-historia" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
+			<div class="modal-content">
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
 					<div class="container" style="align-content: center">
 						<div class="row" style="padding-top: 5px; align-content: center">
 							<div class="col-12" align="center">
 
-								<H2>ESTILO & IMAGEN</H2>
+								<h2>NUESTRA HISTORIA</h2>
 
-								Descubrimiento, Autoconocimiento
-								Redacta TU Declaración de Marca Personal
-								Acciones
-
-								<h4 style="text-align: center; font-weight: 900; font-style: italic; margin: 40px;">
-									Vivir con Confianza,
-									Coaching en Imagen y Estilo Personal
-								</h4>
-
-								<img src="images/sym01.jpg" alt="" width="100%" style="border-radius: 20px;">
-
-								<h3 style="margin: 40px;">¿Cómo puede ayudarte un Especialista en Estilo Personal?</h3>
-
-								<div class="row">
-									<div class="col-lg-6">
-										<img src="images/sym02.png" alt="" width="100%"
-											style="border-radius: 20px;">Análisis de color
-									</div>
-									<div class="col-lg-6">
-										<img src="images/sym03.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Revisión de guardarropa y accesorios
-									</div>
+								<div style="overflow: hidden; border-radius: 20px; margin-bottom:16px;">
+									<img src="images/smart_move_propietarios.jpeg" width="100%" alt="Camilo y Karen">
 								</div>
 
-								<div class="row">
-									<div class="col-lg-6">
-										<img src="images/sym04.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Selección de atuendos para el éxito
-									</div>
-									<div class="col-lg-6">
-										<img src="images/sym05.png" alt="" width="100%"
-											style="border-radius: 20px;">Salidas de compras
-									</div>
-								</div>
+								<p>Somos Camilo y Karen, una pareja emprendedora que decidió convertir el esfuerzo, la
+									experiencia y los sueños en un proyecto de vida: nuestra compañía de mudanzas.</p>
 
-								<div class="row">
-									<div class="col-lg-6">
-										<img src="images/sym06.jpg" alt="" width="100%"
-											style="border-radius: 20px;">Asesoría en peinado y maquillaje
-									</div>
-									<div class="col-lg-6">
-										<img src="images/sym07.png" alt="" width="100%"
-											style="border-radius: 20px;">¡Estilo Digital!
-									</div>
-								</div>
+								<p>Aunque comenzamos oficialmente hace algunos años en Miami, nuestro camino en este
+									oficio empezó mucho antes, en nuestro país de origen. Allí aprendimos el valor del
+									trabajo duro, la responsabilidad y la importancia de cuidar cada detalle,
+									especialmente cuando se trata de algo tan importante como el hogar de una familia.
+								</p>
 
-								<h3>Qué esperar</h3>
+								<p>Al llegar a Estados Unidos, decidimos apostar por lo que sabíamos hacer bien y por
+									lo que nos apasiona: ayudar a las personas en uno de los momentos más importantes
+									de sus vidas, una mudanza. Sabemos que no se trata solo de transportar objetos,
+									sino de mover historias, recuerdos y nuevos comienzos.</p>
 
-								<div class="steps">
-									<div class="step">
-										<div class="step-number">1</div>
-										<div class="step-content">
-											<h3>Evaluación & análisis</h3>
-											<p>Revisión del clóset.</p>
-										</div>
-									</div>
+								<p>Somos padres de tres hijos, quienes son nuestro mayor motor y la razón por la que
+									cada día nos levantamos con más ganas de trabajar, crecer y dar lo mejor de
+									nosotros. Ellos nos inspiran a construir un negocio basado en la confianza, el
+									respeto y la excelencia.</p>
 
-									<div class="step">
-										<div class="step-number">2</div>
-										<div class="step-content">
-											<h3>Asesoría en peinado/maquillaje</h3>
-											<!-- <p>Tu Declaración de Marca Personal</p> -->
-										</div>
-									</div>
+								<p>Nuestro compromiso es claro: ofrecer un servicio responsable, puntual y cuidadoso,
+									asegurándonos de que cada cliente tenga una experiencia tranquila y satisfactoria.
+									Creemos firmemente que el éxito de nuestro negocio está en la felicidad de nuestros
+									clientes.</p>
 
-									<div class="step">
-										<div class="step-number">3</div>
-										<div class="step-content">
-											<h3>Salida de compras</h3>
-											<!-- <p>Pon tu marca en acción</p> -->
-										</div>
-									</div>
-								</div>
+								<h5 style="text-align: center; margin: 30px 0;">Más que una compañía de mudanzas,
+									somos una familia ayudando a otras familias a comenzar nuevos capítulos.</h5>
+
+								<div class="own-movement" style="margin-top: 20px;">SMART MOVE</div>
+								<div class="own-life" style="margin-bottom: 60px;">SOLUTIONS LLC</div>
 
 								<div class="separator-medium"></div>
 							</div>
-
 
 						</div>
 					</div>
@@ -793,106 +648,30 @@
 		</div>
 	</div>
 
+
+	<!-- ============================================================ -->
+	<!-- MODAL: ESCANEA / QR -->
+	<!-- ============================================================ -->
 	<div id="escanea" class="modal fade register-modal" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content" style='background-image: url("images/bg-popups.jpg"); background-size: cover;'>
 				<div class="modal-body">
 					<button type="button" class="close" data-dismiss="modal" style="color: #ffffff">×</button>
 					<div class="container" style="align-content: center">
-						<div class="row" style="padding-top: 1px; align-content: center">
-							<div class="col-12" align="center">
-
-
-								<h2 style="color: chartreuse; font-style: italic;">ESCANEA</h2>
-								<h3 style="font-style: italic;">NUESTRO KSYSTEM</h3>
-
-								<div class="img qr2">
-									<img src="images/qr.png" alt=" ">
-								</div>
-
-
-								<div class="separator-medium"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div id="calificanos" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content" style='background-image: url("images/bg-popups.jpg");  background-size: cover;'>
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" style="color: #ffffff">×</button>
-					<div class="container" style="align-content: center">
 						<div class="row" style="padding-top: 5px; align-content: center">
-
-
-
-
 							<div class="col-12" align="center">
-
-								<div class="container">
-									<form class="form-outline">
-										<div class="form-wrapper">
-											<div class="input-wrap">
-												<input type="text" placeholder="Nombre">
-											</div>
-											<div class="input-wrap">
-												<input type="email" placeholder="Email">
-											</div>
-
-											<div class="input-wrap">
-												<input type="text" placeholder="Celular">
-											</div>
-											<div class="input-wrap">
-												<select class="custom-select">
-													<option value="1" selected="" disabled="">Seleccionar Asunto
-													</option>
-													<option value="2">Quejas y Reclamos</option>
-													<option value="3">Cumplido</option>
-													<option value="4">Información</option>
-												</select>
-											</div>
-											<div class="input-wrap">
-												<textarea cols="30" rows="4" placeholder="Comentario"></textarea>
-											</div>
-										</div>
-									</form>
+								<h3 style="color:#fff;">ESCANEAR QR KSYSTEM</h3>
+								<div class="qr2">
+									<img src="images/qr.png" alt="Código QR" width="100%">
 								</div>
-
-								<div class="separator-medium"></div>
-								<div class="container">
-									<a href=" ">
-										<div class="row">
-											<div class="col-12">
-												<div class="img">
-													<img src="images/enviarboton.png" alt=" ">
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-
-
 								<div class="separator-medium"></div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
-
-
-
-
-
-
 
 
 	<div class="separator-large"></div>
@@ -901,162 +680,8 @@
 	</div>
 	<!-- end page wrapper -->
 
-
+	</div>
 	<!-- end toolbar bottom -->
-
-
-
-	<!-- Horarios Modal -->
-	<div id="horarios" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog modal-bottom">
-			<div class="modal-content" style='background-image: url("images/bg03.png");'>
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" style="color: #000000">×</button>
-					<div class="container" style="align-content: center">
-						<div class="row" style="padding-top: 20px; align-content: center">
-							<div class="col-12" align="center">
-								<h3 style="color: #333; font-weight: bold; margin-bottom: 20px;">HORARIOS DE SERVICIO
-								</h3>
-								<p style="color: #666; margin-bottom: 25px;">Consulta nuestro horario de atención</p>
-
-								<div class="container" style="text-align: left; max-width: 400px; margin: 0 auto;">
-									<div
-										style="background: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; margin-bottom: 15px;">
-										<h5
-											style="color: #333; font-weight: bold; margin-bottom: 15px; text-align: center;">
-											HORARIO SEMANAL</h5>
-
-										<div style="margin-bottom: 10px;">
-											<strong style="color: #555;">Lunes a Viernes:</strong><br>
-											<span style="color: #777;">6:00 AM - 9:00 PM</span>
-										</div>
-
-										<div style="margin-bottom: 10px;">
-											<strong style="color: #555;">Sábados:</strong><br>
-											<span style="color: #777;">7:00 AM - 6:00 PM</span>
-										</div>
-
-										<div style="margin-bottom: 10px;">
-											<strong style="color: #555;">Domingos:</strong><br>
-											<span style="color: #777;">8:00 AM - 4:00 PM</span>
-										</div>
-									</div>
-
-									<div
-										style="background: rgba(255,255,255,0.9); padding: 20px; border-radius: 15px; margin-bottom: 15px;">
-										<h6
-											style="color: #333; font-weight: bold; margin-bottom: 10px; text-align: center;">
-											SESIONES ESPECIALES</h6>
-										<div style="font-size: 14px; color: #666; text-align: center;">
-											<p>• Consultas personalizadas disponibles</p>
-											<p>• Sesiones de entrenamiento grupal</p>
-											<p>• Coaching individual e imagen</p>
-										</div>
-									</div>
-
-									<div
-										style="background: rgba(102, 126, 234, 0.1); padding: 15px; border-radius: 10px; text-align: center;">
-										<small style="color: #555; font-style: italic;">
-											<strong>Nota:</strong> Los horarios pueden variar en días festivos.<br>
-											Contáctanos para agendar tu cita.
-										</small>
-									</div>
-								</div>
-
-								<div class="separator-medium"></div>
-								<div class="separator-medium"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<!-- Training Appointment Modal -->
-	<div id="training-appointment" class="modal fade register-modal" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" style="margin: .7rem auto;">
-			<div class="modal-content"
-				style="background-color:#FFFFFF; border-bottom-left-radius: 35px; border-bottom-right-radius: 35px;">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" style="color: #131313">×</button>
-
-					<div class="container" style="align-content: center">
-						<div class="row" align="center">
-							<div class="col-12">
-								<div class="text">
-									<h5 class="card-title" style="font-size: 28px; align-content: center">
-										<strong>AGENDA TU ENTRENAMIENTO</strong>
-									</h5>
-								</div>
-							</div>
-						</div>
-						<div class="row" style="padding-top: 5px; align-content: center">
-							<div class="col-12" align="center">
-								<div class="container">
-									<form id="training-form-es">
-										<input type="text" name="name" id="name-es" placeholder="Nombre" required>
-										<input type="email" name="email" id="email-es" placeholder="Correo electrónico"
-											required>
-										<input type="tel" name="phone" id="phone-es" placeholder="Teléfono" required>
-
-										<label for="date-es">Selecciona la fecha</label>
-										<input type="date" name="date" id="date-es" placeholder="Fecha de entrenamiento"
-											required>
-
-										<label for="time-es">Selecciona la hora</label>
-										<input type="time" name="time" id="time-es" placeholder="Hora de entrenamiento"
-											required>
-
-										<label for="service-es">Tipo de servicio</label>
-										<select name="service" id="service-es" required>
-											<option value="">Selecciona un servicio</option>
-											<option value="Entrenamiento Personal">Entrenamiento Personal</option>
-											<option value="Coaching Personal">Coaching Personal</option>
-											<option value="Coaching Nutricional">Coaching Nutricional</option>
-											<option value="Coaching de Carrera">Coaching de Carrera</option>
-											<option value="Estilo e Imagen">Estilo e Imagen</option>
-											<option value="Marca Personal">Marca Personal</option>
-										</select>
-
-										<button class="button-menu button-menu-02" type="submit"
-											style="margin-top: 20px; width: 100%;">
-											Enviar por WhatsApp / Call: 262-484-7309 / 813-460-8601
-										</button>
-									</form>
-									<script>
-										document.getElementById('training-form-es').addEventListener('submit', function (e) {
-											e.preventDefault();
-											var name = document.getElementById('name-es').value;
-											var email = document.getElementById('email-es').value;
-											var phone = document.getElementById('phone-es').value;
-											var date = document.getElementById('date-es').value;
-											var time = document.getElementById('time-es').value;
-											var service = document.getElementById('service-es').value;
-											var message =
-												'Solicitud de Cita de Entrenamiento%0A' +
-												'Nombre: ' + encodeURIComponent(name) + '%0A' +
-												'Correo: ' + encodeURIComponent(email) + '%0A' +
-												'Teléfono: ' + encodeURIComponent(phone) + '%0A' +
-												'Fecha: ' + encodeURIComponent(date) + '%0A' +
-												'Hora: ' + encodeURIComponent(time) + '%0A' +
-												'Servicio: ' + encodeURIComponent(service);
-											var whatsappNumber = '12624847309';
-											var url = 'https://wa.me/' + whatsappNumber + '?text=' + message;
-											window.open(url, '_blank');
-										});
-									</script>
-								</div>
-								<div class="separator-medium"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 
@@ -1068,7 +693,5 @@
 	<script src="js/main.js"></script>
 
 </body>
-
-<!-- Mirrored from kenoshasystem.com/elpatiorestaurant/e-menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Aug 2025 17:19:19 GMT -->
 
 </html>

@@ -167,7 +167,7 @@ sup {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   background-color: transparent
 }
@@ -5241,7 +5241,7 @@ input[type=submit].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  /* background-color: #fff; */
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: .25rem
@@ -6593,8 +6593,8 @@ a.close.disabled {
   height: 100%;
   background-color: rgba(10, 35, 3, 0.8);
   /* Very transparent */
-  backdrop-filter: blur(40px) ;
-  -webkit-backdrop-filter: blur(40px) ;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 
 }
 
@@ -11332,7 +11332,7 @@ a.text-dark:hover {
   }
 
   abbr[title]::after {
-    content: " ("attr(title) ")"
+    content: " (" attr(title) ")"
   }
 
   pre {
