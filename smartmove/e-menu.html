@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -46,12 +46,32 @@
 		}
 
 		@keyframes bgKenBurns {
-			0%   { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
-			25%  { transform: scale(1.06) translateX(-1%) translateY(-1%); opacity: 0.15; }
-			50%  { transform: scale(1.10) translateX(1%)  translateY(1%);  opacity: 0.13; }
-			75%  { transform: scale(1.06) translateX(2%)  translateY(-1%); opacity: 0.15; }
-			100% { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
+			0% {
+				transform: scale(1) translateX(0%) translateY(0%);
+				opacity: 0.10;
+			}
+
+			25% {
+				transform: scale(1.06) translateX(-1%) translateY(-1%);
+				opacity: 0.15;
+			}
+
+			50% {
+				transform: scale(1.10) translateX(1%) translateY(1%);
+				opacity: 0.13;
+			}
+
+			75% {
+				transform: scale(1.06) translateX(2%) translateY(-1%);
+				opacity: 0.15;
+			}
+
+			100% {
+				transform: scale(1) translateX(0%) translateY(0%);
+				opacity: 0.10;
+			}
 		}
+
 		/* ── Swiper icon styles ── */
 		.sswiper {
 			display: flex;
@@ -62,14 +82,16 @@
 			padding: 18px 10px;
 			min-height: 110px;
 		}
+
 		.sswiper .swiper-icon {
 			width: 36px;
 			height: 36px;
-			stroke: #45FF17;
+			stroke: #9FD45F;
 			stroke-width: 1.5;
 			flex-shrink: 0;
 			transition: transform 0.3s ease;
 		}
+
 		.sswiper:hover .swiper-icon {
 			transform: scale(1.18);
 		}
@@ -201,7 +223,7 @@
 
 		<a href="https://wa.me/12624847309" target="_blank" rel="noopener noreferrer">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						WHATSAPP
 					</div>
@@ -211,7 +233,7 @@
 
 		<a href="tel:+12624847309" target="_blank">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						LLAMAR: 262-484-7309
 					</div>
@@ -221,7 +243,7 @@
 
 		<a href="tel:+18134608601" target="_blank">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						LLAMAR: 813-460-8601
 					</div>
@@ -231,7 +253,7 @@
 
 		<a href="mailto:smartmovesolutionsllc@gmail.com" target="_blank">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						ENVIAR CORREO
 					</div>
@@ -241,7 +263,7 @@
 
 		<a href="#" data-toggle="modal" data-target="#escanea">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						ESCANEAR KSYSTEM
 					</div>
@@ -386,8 +408,10 @@
 												por la que cada día nos levantamos con más ganas de trabajar, crecer y
 												dar lo mejor de nosotros.</p>
 
-											<h5 style="text-align: center; margin-top: 30px;">Una familia ayudando a otras familias a comenzar nuevos capítulos.</h5>
-											<div class="own-life" style="letter-spacing: 0px; margin-top: 10px;">Smart Move Solutions LLC</div>
+											<h5 style="text-align: center; margin-top: 30px;">Una familia ayudando a
+												otras familias a comenzar nuevos capítulos.</h5>
+											<div class="own-life" style="letter-spacing: 0px; margin-top: 10px;">Smart
+												Move Solutions LLC</div>
 
 										</div>
 
@@ -411,8 +435,8 @@
 											<li>🧹 Limpieza Post Mudanza</li>
 										</ul>
 
-										<img src="images/services_smartmove.jpg" alt="Servicios de Mudanza"
-											width="100%" style="border-radius: 20px; margin: 16px 0;">
+										<img src="images/services_smartmove.jpg" alt="Servicios de Mudanza" width="100%"
+											style="border-radius: 20px; margin: 16px 0;">
 
 										<div class="steps">
 											<div class="step">
@@ -483,8 +507,8 @@
 
 								<div class="row">
 									<div class="col-lg-6">
-										<img src="images/carrier_smart_move.jpg" alt="Mudanza Residencial"
-											width="100%" style="border-radius: 20px;">
+										<img src="images/carrier_smart_move.jpg" alt="Mudanza Residencial" width="100%"
+											style="border-radius: 20px;">
 										Mudanza Residencial
 									</div>
 									<div class="col-lg-6">

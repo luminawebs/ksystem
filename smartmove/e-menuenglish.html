@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -46,12 +46,32 @@
 		}
 
 		@keyframes bgKenBurns {
-			0%   { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
-			25%  { transform: scale(1.06) translateX(-1%) translateY(-1%); opacity: 0.15; }
-			50%  { transform: scale(1.10) translateX(1%)  translateY(1%);  opacity: 0.13; }
-			75%  { transform: scale(1.06) translateX(2%)  translateY(-1%); opacity: 0.15; }
-			100% { transform: scale(1)    translateX(0%)  translateY(0%);  opacity: 0.10; }
+			0% {
+				transform: scale(1) translateX(0%) translateY(0%);
+				opacity: 0.10;
+			}
+
+			25% {
+				transform: scale(1.06) translateX(-1%) translateY(-1%);
+				opacity: 0.15;
+			}
+
+			50% {
+				transform: scale(1.10) translateX(1%) translateY(1%);
+				opacity: 0.13;
+			}
+
+			75% {
+				transform: scale(1.06) translateX(2%) translateY(-1%);
+				opacity: 0.15;
+			}
+
+			100% {
+				transform: scale(1) translateX(0%) translateY(0%);
+				opacity: 0.10;
+			}
 		}
+
 		/* ── Swiper icon styles ── */
 		.sswiper {
 			display: flex;
@@ -62,14 +82,16 @@
 			padding: 18px 10px;
 			min-height: 110px;
 		}
+
 		.sswiper .swiper-icon {
 			width: 36px;
 			height: 36px;
-			stroke: #45FF17;
+			stroke: #9FD45F;
 			stroke-width: 1.5;
 			flex-shrink: 0;
 			transition: transform 0.3s ease;
 		}
+
 		.sswiper:hover .swiper-icon {
 			transform: scale(1.18);
 		}
@@ -200,7 +222,7 @@
 
 		<a href="https://wa.me/12624847309" target="_blank" rel="noopener noreferrer">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12  d-flex justify-content-center d-inline-flex">
 					<div class="button-menu button-menu-02">
 						WHATSAPP
 					</div>
@@ -210,7 +232,7 @@
 
 		<a href="tel:+12624847309">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12  d-flex justify-content-center">
 					<div class="button-menu button-menu-02">
 						CALL: 262-484-7309
 					</div>
@@ -220,7 +242,7 @@
 
 		<a href="tel:+18134608601">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						CALL: 813-460-8601
 					</div>
@@ -230,7 +252,7 @@
 
 		<a href="mailto:smartmovesolutionsllc@gmail.com" target="_blank">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						SEND EMAIL
 					</div>
@@ -240,7 +262,7 @@
 
 		<a href="#" data-toggle="modal" data-target="#escanea">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-inline-flex">
 					<div class="button-menu button-menu-02">
 						SCAN KSYSTEM
 					</div>
@@ -383,8 +405,10 @@
 												the reason why every day we wake up with more desire to work, grow, and
 												give our best.</p>
 
-											<h5 style="text-align: center; margin-top: 30px;">A family helping other families begin new chapters.</h5>
-											<div class="own-life" style="letter-spacing: 0px; margin-top: 10px;">Smart Move Solutions LLC</div>
+											<h5 style="text-align: center; margin-top: 30px;">A family helping other
+												families begin new chapters.</h5>
+											<div class="own-life" style="letter-spacing: 0px; margin-top: 10px;">Smart
+												Move Solutions LLC</div>
 
 										</div>
 

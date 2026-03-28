@@ -1,4 +1,4 @@
-.fakeLoader {
+﻿.fakeLoader {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: rgb(69, 255, 23);
+    background-color: #9FD45F;
     opacity: 0.6;
     position: absolute;
     top: 0;

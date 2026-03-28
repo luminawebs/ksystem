@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 Maxui - Bootstrap 4 Based Mobile Template
 Author : aStylers
@@ -6,6 +6,7 @@ Author URL : https://themeforest.net/user/astylers
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;900&display=swap');
 /*
 
 Table of Content:
@@ -121,7 +122,7 @@ Table of Content:
 
 
 ::selection {
-    background: rgb(69, 255, 23) !important;
+    background: #9FD45F !important;
     color: black;
     text-shadow: none;
 }
@@ -129,10 +130,11 @@ Table of Content:
 
 /* general */
 body {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Lexend", sans-serif;
     color: #000;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
+    /* ExtraLight */
 
     background: #fff;
     overflow-x: hidden;
@@ -145,9 +147,9 @@ h4,
 h5,
 h6 {
     line-height: 115%;
-    font-family: "exo 2", sans-serif;
+    font-family: "Lexend", sans-serif;
     margin: 0;
-    font-weight: 500;
+    font-weight: 900;
     color: #333;
 }
 
@@ -157,9 +159,21 @@ h1 {
 }
 
 h2 {
-
     font-weight: 900;
     text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+h5,
+h6 {
+    font-weight: 500;
 }
 
 .modal h2 {
@@ -208,7 +222,7 @@ a:focus {
 }
 
 a:hover {
-    color: #BCBBBB;
+    color: #16390e;
     text-decoration: none;
 }
 
@@ -259,7 +273,7 @@ img {
 input {
     width: 100%;
     height: 42px;
-    background: rgba(69, 255, 23, 0.3);
+    background: rgba(159, 212, 95, 0.3);
     border-radius: 4px;
     border: 0;
     padding: 2px 15px;
@@ -673,12 +687,12 @@ textarea {
 }
 
 .bg-succes {
-    background: #1ad66c !important;
+    background: #9FD45F !important;
     color: #fff !important;
 }
 
 .color-succes {
-    color: #1ad66c !important;
+    color: #9FD45F !important;
 }
 
 .bg-danger {
@@ -773,7 +787,7 @@ textarea {
 
 /* social media color */
 .ion-logo-facebook {
-    color: rgb(69, 255, 23) !important;
+    color: #9FD45F !important;
 }
 
 .ion-logo-google {
@@ -785,7 +799,7 @@ textarea {
 }
 
 .ion-logo-instagram {
-    color: rgb(69, 255, 23) !important;
+    color: #9FD45F !important;
 }
 
 .ion-logo-linkedin-in {
@@ -793,11 +807,11 @@ textarea {
 }
 
 .ion-logo-whatsapp {
-    color: rgb(69, 255, 23) !important;
+    color: #9FD45F !important;
 }
 
 .ion-logo-youtube {
-    color: rgb(69, 255, 23) !important;
+    color: #9FD45F !important;
 }
 
 .ion-logo-pinterest {
@@ -832,7 +846,7 @@ textarea {
 .bg-facebook,
 .bg-whatsapp {
     /* background: #ffffff !important; */
-    color: rgb(69, 255, 23);
+    color: #9FD45F;
     background-image: url(../images/bg-hexa.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1838,9 +1852,10 @@ a.button-outline:hover {
 }
 
 .swiper-custom .swiper-slide .content h4 {
-    color: rgb(69, 255, 23);
-    font-style: italic;
-    font-weight: 900;
+    color: #9FD45F;
+    /* font-style: italic; */
+    font-weight: 100;
+    letter-spacing: -2px;
 }
 
 .swiper-pricing .swiper-slide {
@@ -2110,7 +2125,7 @@ margin-bottom: -35px;
 
 .succes-modal .modal-icon-title i {
     font-size: 95px;
-    color: #1ad66c;
+    color: #9FD45F;
 }
 
 .notification-modal i {
@@ -2773,7 +2788,7 @@ margin-bottom: -35px;
 
 .green-line {
     border-radius: 400px;
-    border: #45FF17 0px solid;
+    border: #9FD45F 0px solid;
     padding: 3px;
 }
 
@@ -2787,9 +2802,9 @@ margin-bottom: -35px;
 
 
 .own-movement {
-    font-family: "Exo 2";
+    font-family: "Lexend";
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.5rem;
     letter-spacing: 5.07px;
     color: #1a3a5c;
@@ -2797,8 +2812,8 @@ margin-bottom: -35px;
 }
 
 .own-life {
-    font-family: "Exo 2";
-    font-style: italic;
+    font-family: "Lexend";
+    /* font-style: italic; */
     font-size: 2rem;
     letter-spacing: 6.94px;
     color: #1a3a5c;
@@ -2812,8 +2827,8 @@ margin-bottom: -35px;
 
 
 .sub-line {
-    font-family: "Exo 2";
-    font-style: italic;
+    font-family: "Lexend";
+    /* font-style: italic; */
     font-size: 1.5rem;
     letter-spacing: 6.94px;
     color: #292b29;
@@ -2838,13 +2853,13 @@ margin-bottom: -35px;
 
 
 .button01 {
-    /* background: linear-gradient(90deg, #45FF17 0%, #00FFFF 100%); */
+    /* background: linear-gradient(90deg, #9FD45F 0%, #00FFFF 100%); */
     /* border-radius: 46px; */
     padding: 40px 12px;
     line-height: 38px;
     font-size: 1.8rem;
     font-weight: 900;
-    font-style: italic;
+    /* font-style: italic; */
     color: #080808;
     text-transform: none;
     margin-top: 20px;
@@ -3022,32 +3037,112 @@ margin-bottom: -35px;
 
 
 
+
+/* ──────────────────────────────────────────
+   BUTTON MENU 01  — Primary CTA (accent fill)
+────────────────────────────────────────── */
 .button-menu-01 {
-    background-image: url(../images/bg-button-02.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 30px 0px 35px;
+    position: relative;
+    overflow: hidden;
     display: inline-block;
-    text-align: center;
-    line-height: 25px;
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
     width: 100%;
-    font-style: italic;
-    font-weight: 900;
-    margin: 0px auto 10px;
     max-width: 490px;
+    margin: 0px auto 10px;
+    padding: 22px 0px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #fff;
+    background: #C0FF72;
+    border: 3px solid #9FD45F;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(159, 212, 95, 0.30);
+    cursor: pointer;
+    transition: background 0.35s ease, box-shadow 0.35s ease, transform 0.2s ease;
+}
+
+.button-menu-01::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -80px;
+    width: 55px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.28);
+    transform: rotate(35deg);
+    transition: left 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.button-menu-01:hover::after {
+    left: 115%;
+}
+
+.button-menu-01:hover {
+    background: #C0FF72;
+    box-shadow: 0 8px 32px rgba(159, 212, 95, 0.45);
+    transform: translateY(-2px);
+}
+
+
+/* ──────────────────────────────────────────
+   BUTTON MENU 02  — Secondary (ghost / outline)
+────────────────────────────────────────── */
+.button-menu-02 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    max-width: 490px;
+    margin: 0px auto 10px;
+    padding: 18px 20px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.70);
+    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-menu-02::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -80px;
+    width: 40px;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.45);
+    transform: rotate(35deg);
+    transition: left 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.button-menu-02:hover::after {
+    left: 115%;
+}
+
+.button-menu-02:hover {
+    background: rgba(190, 241, 102, 0.92);
+    border-color: #9FD45F;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+    transform: translateY(-1px);
 }
 
 
 
-
-
-
 .button-menu-02 {
-    background-image: url(../images/bg-button-03.svg);
+    /* background-image: url(../images/bg-button-03.svg); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -3058,31 +3153,66 @@ margin-bottom: -35px;
     color: #020202;
     text-align: center;
     width: 100%;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 900;
     margin: 0px auto 10px;
     max-width: 490px;
+    letter-spacing: -2px;
 }
 
 
 
+
+/* ──────────────────────────────────────────
+   BUTTON MENU 03  — Tertiary (dark theme)
+────────────────────────────────────────── */
 .button-menu-03 {
-    background-image: url(../images/bg-button-04.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 27px 0px 31px;
+    position: relative;
+    overflow: hidden;
     display: inline-block;
-    text-align: center;
-    line-height: 25px;
-    font-size: 30px;
-    color: #1ad66c !important;
-    text-align: center;
     width: 100%;
-    font-style: italic;
-    font-weight: 900;
-    margin: 0px auto 10px;
     max-width: 490px;
+    margin: 0px auto 10px;
+    padding: 20px 0px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #9FD45F !important;
+    background: #97dc48;
+    border: 2px dashed rgba(159, 212, 95, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(26, 58, 92, 0.4);
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+    text-decoration: none;
+}
+
+.button-menu-03::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -100px;
+    width: 60px;
+    height: 200%;
+    background: linear-gradient(to right, transparent, rgba(159, 212, 95, 0.3), transparent);
+    transform: rotate(25deg);
+    transition: left 650ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.button-menu-03:hover::after {
+    left: 120%;
+}
+
+.button-menu-03:hover {
+    background: #9fd45fb9;
+    border: 2px solid #9FD45F;
+    color: #fff !important;
+    box-shadow: 0 6px 25px rgba(74, 92, 26, 0.6);
+    transform: scale(1.02);
 }
 
 
@@ -3092,14 +3222,14 @@ margin-bottom: -35px;
     text-align: center;
     line-height: 25px;
     font-size: 26px;
-    color: rgb(69, 255, 23) !important;
+    color: #9FD45F !important;
     text-align: center;
     width: 100%;
     font-style: italic;
     font-weight: 900;
     margin: 0px auto 10px;
     max-width: 490px;
-    border: 2px rgba(69, 255, 23, 0.3) solid;
+    border: 2px rgba(159, 212, 95, 0.3) solid;
     border-radius: 20px 0px 20px;
     padding-bottom: 30px;
     transition: all 0.3s ease;
@@ -3119,10 +3249,10 @@ margin-bottom: -35px;
     font-weight: 900;
     margin: 0px auto 10px;
     max-width: 490px;
-    border: 1px rgb(69, 255, 23) solid;
+    border: 1px #9FD45F solid;
     border-radius: 20px 0px 20px;
     padding-bottom: 30px;
-    background-color: rgb(69, 255, 23) !important;
+    background-color: #9FD45F !important;
 }
 
 .button05 img {
@@ -3151,7 +3281,7 @@ margin-bottom: -35px;
 
 #escanea h4,
 #escanea h3 {
-    color: rgb(69, 255, 23);
+    color: #9FD45F;
 }
 
 .qr2 {
@@ -3257,7 +3387,7 @@ margin-bottom: -35px;
     min-width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #45FF17, #555);
+    background: linear-gradient(135deg, #9FD45F, #555);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3315,7 +3445,7 @@ margin-bottom: -35px;
 }
 
 #bg-video {
-    display: none;
+    /* display: none; */
     position: fixed;
     top: 0;
     left: 0;
@@ -3326,4 +3456,6 @@ margin-bottom: -35px;
     object-fit: cover;
     z-index: -1;
     background: #fff;
+    opacity: 0.5;
+    filter: grayscale(100%);
 }
